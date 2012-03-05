@@ -15,13 +15,13 @@ PATH = 'entries'
 OUTPUT_PATH = 'html'
 FEED_RSS = 'feed'
 CATEGORY_FEED_RSS = 'category/%s/feed'
-ARTICLE_PERMALINK_STRUCTURE = '/%Y/%m/%d'
-MENUITEMS = [('Home', 'http://blog.ziade.org'),
-             ('Books', 'books'),
-             ('Resume', 'resume'),
-             ('Contact me', 'contact')]
+ARTICLE_PERMALINK_STRUCTURE = '/%Y/%m/%d/'
+MENUITEMS = [('Home', '/'),
+             ('Books', '/books.html'),
+             ('Resume', '/resume.html'),
+             ('Contact me', '/contact.html')]
 THEME = 'theme'
 
-STATIC_PAGES = {'/books': 'static/books.html',
-                '/resume': 'static/resume.html',
-                '/contact': 'static/contact.html'}
+STATIC_PAGES = {'/books.html': 'static/books.html',
+                '/resume.html': 'static/resume.html',
+                '/contact.html': 'static/contact.html'}
