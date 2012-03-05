@@ -13,8 +13,8 @@ LOCALE = ""
 DEFAULT_PAGINATION = 10
 PATH = 'entries'
 OUTPUT_PATH = 'html'
-FEED_RSS = 'feed.xml'
-CATEGORY_FEED_RSS = 'category/%s/feed.xml'
+FEED_RSS = 'feed'
+CATEGORY_FEED_RSS = 'category/%s/feed'
 ARTICLE_PERMALINK_STRUCTURE = '/%Y/%m/%d'
 MENUITEMS = [('Home', 'http://blog.ziade.org'),
              ('Books', 'books'),
