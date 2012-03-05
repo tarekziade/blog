@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 AUTHOR = u'Tarek Ziadé'
 SITENAME = u"Fetchez le Python"
+SITESUBTITLE = AUTHOR
 SITEURL = 'http://blog.ziade.org'
 TIMEZONE = "Europe/Paris"
 CLEAN_URLS = True

@@ -22,9 +22,14 @@
 </head>
 
 <body id="index" class="home">
-{% include 'github.html' %}
-        <header id="banner" class="body">
-                <h1><a href="{{ SITEURL }}">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+    {% include 'github.html' %}
+        
+    <header id="banner" class="body">
+        <a id='rss' href="{{ SITEURL }}/{{ FEED_RSS }}"><img src="{{ SITEURL }}/theme/images/icons/rss.png"></img></a>
+
+        <h1><a href="{{ SITEURL }}">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+        
+        
                 <nav><ul>
                 {% for title, link in MENUITEMS %}
                     <li><a href="{{ link }}">{{ title }}</a></li>
