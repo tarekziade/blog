@@ -5,7 +5,7 @@ SITEURL = 'http://blog.ziade.org'
 TIMEZONE = "Europe/Paris"
 CLEAN_URLS = True
 GITHUB_URL = 'http://github.com/tarekziade/'
-DISQUS_SITENAME = "blog-tarekziade"
+DISQUS_SITENAME = "fetchezlepython"
 PDF_GENERATOR = False
 REVERSE_CATEGORY_ORDER = True
 LOCALE = ""
@@ -15,9 +15,12 @@ OUTPUT_PATH = 'html'
 FEED_RSS = 'feed.xml'
 CATEGORY_FEED_RSS = 'category/%s/feed.xml'
 ARTICLE_PERMALINK_STRUCTURE = '/%Y/%m/%d'
-MENUITEMS = [('Home', 'http://ziade.org'),
-             ('Blog', 'http://blog.ziade.org'),
-             ('Books', 'http://ziade.org/books'),
-             ('Resume', 'http://ziade.org/resume'),
-             ('Contact me', 'http://ziade.org/contact')]
+MENUITEMS = [('Home', 'http://blog.ziade.org'),
+             ('Books', 'books'),
+             ('Resume', 'resume'),
+             ('Contact me', 'contact')]
 THEME = 'theme'
+
+STATIC_PAGES = {'/books': 'static/books.html',
+                '/resume': 'static/resume.html',
+                '/contact': 'static/contact.html'}

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block title %}Books I wrote{% endblock %}
+{% block content %}
+
+
+
+<section id="content" class="body">
+ <div id="latest-post" class="post">
+ 
+
+<p class="byline"><span><a href="http://www.flickr.com/search/?q=tarek+ziad%C3%A9">More pics</a></span></p>
+<div id="getCv">
+    <a href="{{ SITEURL }}/tarek-ziade-resume.pdf">Download my résumé</a>
+</div>
+
+
+<p>I am a Python developer, located in Dijon, France. I work at <a href="http://mozilla.com" target="_blank">Mozilla</a> in the Services team.
+
+I founded a French Python User group, called <a title="Afpy" href="http://afpy.org" target="_blank">Afpy</a>, and I have written several articles 
+about Python for several magazines, and a few <a href="books">books</a> in French and in English. I am trying to keep this page up-to-date with 
+my latests activities. Visit my <a href="blog">blog</a> for fresh news, or suscribe to my <a href="http://twitter.com/tarek_ziade">twitter</a>.
+
+
+</p>
+
+<h2>Contributions to Open Source Projects (latest)</h2>
+<img src="{{ SITEURL }}/theme/images/tarek.png" class="pic"/>
+
+<ul>
+    <li><strong>Python</strong> - I am the current <a href="http://docs.python.org/distutils">Distutils</a> maintainer in the Python standard library.
+    I am trying to make it evolve so it meets modern packaging requirements.
+    </li>
+    <li><strong>Zope</strong> - I am commiting bug fixes and improvements into Zope packages like 
+    <a href="http://pypi.python.org/pypi/zc.buildout">zc.buildout</a>
+
+    </li>
+    <li><strong>Plone</strong> - I am involved in the Plone community. I have enhanced packages likes 
+    <a href="http://pypi.python.org/pypi/ZopeSkel">ZopeSkel</a> or <a href="http://pypi.python.org/pypi/PloneSoftwareCenter">PloneSoftwareCenter</a>.
+    The later is used to run <a href="http://plone.org/products">http://plone.org/products</a> and I have made it compatible with 
+    the PyPI protocol.
+    </li>
+</ul>
+<h2>Publications</h2>
+
+<ul>
+    <li>See the <a href="books">books</a> section.
+    <li>"Zope 3 cookbook" (<a href="http://tarekziade.files.wordpress.com/2006/10/cookbookfr.pdf">PDF FR</a>|<a href="http://tarekziade.files.wordpress.com/2006/10/cookbooken.pdf">PDF EN</a>)</li>
+    <li>"Python code Patterns", Magazine Programmation sous linux, Juillet/Aout 2006</li>
+    <li>"Création d'un site de publication avec Zope 3", Magazine Programmation sous linux, Mai 2006</li>
+
+    <li>"De Zope 2 à Zope 3", Magazine Programmez!, Avril 2006</li>
+    <li>"<a href="http://www.amazon.fr/exec/obidos/ASIN/2212116772/luvdit0f-21">Programmation Python</a>", Editions Eyrolles, Janvier 2006</li>
+    <li>"CPSTypeMaker Visual edition of document types", ZopeMag.com, Mars 2005</li>
+</ul>
+<h2>Talks</h2>
+<ul>
+    <li>July 2008 - OSCON / Portland-OR - zc.buildout - <a href="http://ziade.org/oscon/oscon.pdf" target="_blank">slides</a></li>
+
+    <li>May 2008 - Pycon FR / Paris - How to distribute a Python application - <a href="http://fr.pycon.org/presentations_2008/tarek-ziade-distribuer-python/dist.html">slides</a> / <a href="http://video.google.fr/videoplay?docid=8844897880912820484">video</a></li>
+    <li>Juin 2007 - PyconFR / Paris - The Document Driven development <a href="http://www.ziade.org/pycommunity/pycon/JFP/slides.html">slides</a></li>
+    <li>Février 2007 - Pycon / Dallas-TX - How to document an open source project (tutorial) <a href="http://www.ziade.org/pycommunity/pycon/PyCon07/slides.html">slides</a></li>
+    <li>Janvier 2007 - Solutions Linux - Le Document-Driven Developement</li>
+
+    <li>Juillet 2006 - Europython, CPSBayes, zope-cookbook.org, Ajax <a href="http://blogs.nuxeo.com/sections/blogs/tarek_ziade/2006_07_03_europython-2006-slides">grab here!</a></li>
+    <li>March 2006 - Python, un langage agile, xp-day, <a href="http://blogs.nuxeo.com/sections/blogs/tarek_ziade/2006_03_25_python-slides-from-xp-day-french">slides</a></li>
+    <li>Janvier 2006 - Journal du Net, interview, <a href="http://developpeur.journaldunet.com/itws/060208-itw-nuxeo-ziade.shtml">à lire ici</a></li>
+    <li>Solutions Linux 2006 - Paris: Meilleurs Pratiques Python - <a href="http://programmation-python.org/sections/blog/2006_02_05_mes-slides-de-solution/downloadFile/attachedFile_f0/SL2006.pdf?nocache=1139094262.51">Slides</a></li>
+    <li>RMLL 2005 - Dijon: CPSMailAccess, un webmail avancé pour CPS, Zope 2 et 3 - <a href="http://afpy.org/Members/tarek/cpsmailaccess_rmll.pdf/download">Slides disponibles</a></li>
+
+    <li>Europython 2005 - Goteborg: CPSMailAccess, a zope webmail made with five - <a href="http://www.afpy.org/Members/tarek/cpsmailaccess.pdf/download">Slides disponibles</a></li>
+    <li>Solutions Linux 2005 - Paris: Lightning talk / Comparaison CPS-Plone</li>
+    <li>Solutions Linux 2005 - Paris: Création d'un site CPS avec CPSTypeMaker - Slide en cours de recherche ;)</li>
+    <li>RMLL 2004 - Bordeaux: Création d'un site communautaire avec Plone (retour d'expérience zopeur.org)</li>
+</ul>
+
+
+ </div>
+
+</section>
+{% endblock %}
+

@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Books I wrote{% endblock %}
+{% block content %}
+<section id="content" class="body">
+    <h1 class="entry-title">Books</h1>
+
+<div class="bookEntry">
+    <img src="{{ SITEURL }}/theme/images/epp.jpg" alt="" width="170" height="200" class="left" />
+
+<a href="http://www.amazon.com/exec/obidos/ASIN/184719494X/sharedlinks-20">Expert Python Programming</a> - 2008
+<div>
+Best practices for designing, coding, and distributing your Python software.
+<ul>
+        <li>Learn Python development best practices from an expert, with detailed coverage of naming and coding conventions</li>
+
+        <li>Apply object-oriented principles, design patterns, and advanced syntax tricks</li>
+        <li>Manage your code with distributed version control</li>
+        <li>Profile and optimize your code</li>
+        <li>Proactive test-driven development and continuous integration</li>
+   </ul>
+</div>
+</div>
+ <div style="clear: left"/>
+
+    <div class="bookEntry">
+        <img src="{{ SITEURL }}/theme/images/pg.jpg" alt="" width="170" height="200" class="left" />
+    <a href="http://www.amazon.fr/exec/obidos/ASIN/2100508830/programmation-21">
+        Petit guide à l'usage du développeur agile</a> - 2007
+<div>
+    <strong>Book in French.</strong>
+</div>
+</div>
+<div style="clear: both"/>
+
+<div class="bookEntry">
+    <img src="{{ SITEURL }}/theme/images/pp.jpg"
+          alt="" width="170" height="200" class="left" />
+          <a href="http://www.amazon.fr/exec/obidos/ASIN/221212483X/programmation-21">Programmation Python</a> - 2006 and 2009
+<div>
+    <strong>Book in French.</strong>
+</div>
+<div>
+</div>
+<br/><br/>
+
+
+</section>
+{% endblock %}
+
