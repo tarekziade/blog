@@ -10,8 +10,8 @@ Pycon WebDev Summit Report - Python Application Packages
 
 We had a web summit at Pycon last Thursday and a few discussions next on
 that **Python application package** idea. I had conversations myself with 
-a bunch of different people, trying to understand what they were at
-and what were their goal in this.
+a bunch of different people, trying to understand where they were at
+and what were their goals in this.
 
 If you want to know what it is all about, read Ian blog's here:
 http://blog.ianbicking.org/2012/02/29/python-application-package
@@ -70,7 +70,7 @@ So I would like to step back a little bit and clarify a few things:
 
 Based on these remarks, I would like during the sprint to work in two directions:
 
-- thinking about extending to PEP 345 to introduce fields specific to the notion
+- thinking about extending PEP 345 to introduce fields specific to the notion
   of *running a service* and describe how it would look like in 
   packaging/distutils2's *setup.cfg*
 
