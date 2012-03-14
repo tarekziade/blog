@@ -14,6 +14,7 @@ DEFAULT_PAGINATION = 10
 PATH = 'entries'
 OUTPUT_PATH = 'html'
 FEED_RSS = 'feed'
+TAG_FEED_RSS  = 'tag/%s/feed'
 CATEGORY_FEED_RSS = 'category/%s/feed'
 ARTICLE_PERMALINK_STRUCTURE = '/%Y/%m/%d/'
 MENUITEMS = [('Home', '/'),
