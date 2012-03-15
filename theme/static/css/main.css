@@ -89,6 +89,7 @@ ol {
     float:right;
     margin:10px;
     padding:5px;
+    font-size: 90%;
 }
 
 .post-info p{
@@ -425,4 +426,19 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 
 #rss {
 float: right;
-}    
+}
+
+p.first.admonition-title {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 4px;
+}
+
+div.note {
+  border: 1px solid black;
+  padding: 6px;
+  float: right;
+  margin: 5px;
+  font-size: 85%;
+}
