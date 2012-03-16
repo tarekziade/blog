@@ -72,7 +72,7 @@ standards or anything else is more than welcome.
 If you're curious, you can see the etherpad we used here during Pycon:
 
 - http://etherpad.mozilla.org/packaging-bof
-- http://etherpad.mozilla.org/packaging-packaging
+- http://etherpad.mozilla.org/packaging-sprint
 
 On a side-note, using a pad like this was extremely useful during the 
 open space, since everyone could interact live in it.
