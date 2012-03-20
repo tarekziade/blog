@@ -8,6 +8,11 @@ Circus 0.1 released
 
 .. image:: http://dl.dropbox.com/u/8617023/circus.png
 
+.. note:: 
+
+   Circus is a program that will let you run and watch multiple processes.
+   Like Supervisord, BluePill and Daemontools.
+
 We wanted to release a first version of Circus *before* Pycon
 originally. Then Pycon was here, so we decided we would release
 it before Pycon would end. And Pycon ended. And we had a few bugs
