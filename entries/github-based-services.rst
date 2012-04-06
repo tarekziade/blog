@@ -20,7 +20,7 @@ service for it you can hook in a few minutes.
 
 For a Python project there are two absolutely awesome services:
 
-- `ReadTheDocs <http:.//readthedocs.org>`_ -- creates a website out of your
+- `ReadTheDocs <http://readthedocs.org>`_ -- creates a website out of your
   project
   Sphinx docs, exactly
   like what we've set with http://packages.python.org but it's all automatically
@@ -49,7 +49,7 @@ admin panel:
   this one -- http://nedbatchelder.com/code/coverage/sample_html/
 
 - A similar Dashboard but with profiling info, using
-  http://www.hexacosa.net/project/pyprof2html.
+  http://www.hexacosa.net/project/pyprof2html/
 
 - A `Funkload Trending <http://funkload.nuxeo.org>`_ Dashboard. Read about
   this here: http://ziade.org/2011/06/10/continuous-load-testing-wint-funkload
