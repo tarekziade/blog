@@ -102,7 +102,17 @@ dl {margin: 0 0 1.5em 0;}
 dt {font-weight: bold;}
 dd {margin-left: 1.5em;}
 
-pre{background-color: #000; padding: 10px; color: #fff; margin: 10px; overflow: auto;}
+pre{
+    font-family: 'Consolas','Deja Vu Sans Mono','Bitstream Vera Sans Mono',monospace;
+    background-color: rgb(238, 238, 238);.
+    padding: 10px;.
+    border-radius: 6px 6px 6px 6px;
+    border: 1px solid rgb(204, 204, 204);
+    color: black;.
+    margin: 10px;.
+    overflow-x: auto;
+    overflow-y: hidden;
+}
 
 /* Quotes */
 blockquote {
