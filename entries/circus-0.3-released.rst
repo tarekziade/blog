@@ -124,17 +124,18 @@ everything's working like a charm.
 I think Circus has reached a level now where it could replace tools
 like Daemontools in some of our set ups.
 
-The next steps are to refactor a bit the tool to make it more pluggable.
-For example, the flapping detector is built-in, but could be
-built as a plug-in since it subscribes to the PUB/SUB channel to get
-notified when a process is restarted, and could control everything
-as a client like circusctl.
+The next major step is to refactor a bit the tool to make it more
+pluggable.
 
-In other words, it would be nice to provide a plugin base class
-that gets notifications and acts upon. The auto-grow feature I want
+For example, the flapping detection is built-in, but could be
+factored out as a plug-in since it subscribes to the PUB/SUB channel
+to get notified when a process is restarted, and could control
+everything as a client like circusctl.
+
+In other words, it would be nice to provide a base class that gets
+notifications and acts upon. The auto-grow feature I want
 to add --a feature where Circus adds automatically workers depending
-on the load-- could be a plugin.
-
+on the load-- could be a plugin based on that class.
 
 Links:
 
