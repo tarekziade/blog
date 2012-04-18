@@ -140,7 +140,7 @@ on the load-- could be a plugin based on that class.
 Links:
 
 - the doc: http://circus.readthedocs.org/en/latest/index.html
-- the release: http://pypi.python.org/pypi/circus/0.3
+- the release: http://pypi.python.org/pypi/circus/0.3.1
 - the repo: https://github.com/mozilla-services/circus
 
 Please let us know what you think !
