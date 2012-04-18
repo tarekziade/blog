@@ -73,11 +73,12 @@ The gist of this code is::
     while True:
         rlist, __, __ = select(pipes, [], [])
         for pipe in rlist:
-            data = pipe.read(self.buffer)
-            redirect_to_circus(data)
-        except IOError, ex:
-            if ex[0] != errno.EAGAIN:
-                raise
+            try:
+                data = pipe.read(self.buffer)
+                redirect_to_circus(data)
+            except IOError, ex:
+                if ex[0] != errno.EAGAIN:
+                    raise
 
 
 **redirect_to_circus** basically redirects the stream to
