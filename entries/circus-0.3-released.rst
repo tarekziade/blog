@@ -14,7 +14,11 @@ Circus 0.3 released
    Like Supervisord, BluePill and Daemontools.
 
 The third release of Circus is here. It wanted to hightlight three new features
-we've added since 0.1.
+we've added since 0.1:
+
+1. rlimit support
+2. stderr and stdout streaming
+3. flapping detection
 
 
 rlimit support
@@ -32,8 +36,12 @@ to 100, you can use in your Circus configuration file the **rlimit_nofile** opti
     cmd = myprogram
     rlimit_nofile = 500
 
+This feature is built-in in the Python standard library, in the *resource* module so that
+was easy to add. The next step here would be to see how Circus could interact with tools
+like `cgroups <https://en.wikipedia.org/wiki/Cgroups>`_.
 
-streaming stderr and stdout
+
+stderr and stdout streaming
 ---------------------------
 
 That feature is a must have, and we worked quite a bit on it to make sure it's fast
@@ -100,7 +108,7 @@ With this feature built-in and enabled by default, Circus detects
 the flapping of processes, and try again *later* then eventually
 quit trying.
 
-Of course, everyone of this event is published in the PUB/SUB
+Of course, the flapping dance is published in the PUB/SUB
 channel so it's easy to build a script that will send you
 an alert when it happens.
 
