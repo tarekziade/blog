@@ -33,9 +33,8 @@ second, but a lot of things are being worked out to improve this.
 For instance, the web app keeps in memory the last 100 stats calls in order
 to build the charts series, and serves them to the clients on every poll.
 
-We're going to change this so this series is built and collected on the
-client-side only. The server-side, in the Circus core code itself, will just send
-back the current stats.
+We're going to change this by collecting and building the series on the client
+only.
 
 We'll also add a bit of `Memoization <https://en.wikipedia.org/wiki/Memoization>`_ so we
 serve back the same stats values in a given timespan to avoid overloading Circus with
