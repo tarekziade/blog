@@ -127,7 +127,7 @@ send in to the tokenserver. And we can use the matching private certificate to
 sign the assertions in the first place.
 
 When I first started, I just sent a bunch of valid assertions to the
-tokenserver, verifying that they were considered as valid ones and 
+tokenserver, verifying that they were considered as valid ones and
 happily returning 200 with a token. Wow. Incredible performances.
 
 Of course, this was wrong. What we are doing here is only to assign an user to a
