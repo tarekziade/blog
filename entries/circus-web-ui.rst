@@ -1,11 +1,10 @@
 A Web admin for Circus
 ######################
 
-:date: 2012-04-23 00:00
+:date: 2012-04-23 18:51
 :tags: python, mozilla
 :category: mozilla
 :author: Tarek Ziadé
-:status: draft
 
 
 We're working on adding a Web Administration Panel to Circus. Like many tools
