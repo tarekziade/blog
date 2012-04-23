@@ -1,10 +1,11 @@
 Scaling the Mozilla Token Server
 ################################
 
-:date: 2012-04-XX XX:XX
+:date: 2012-04-12 00:00
 :tags: python, mozilla
 :category: mozilla
 :author: Tarek Ziadé & Alexis Métaireau & Pete Fritchman
+:status: draft
 
 This blog post gives a high level overview of the work we did
 to scale the Mozilla Token Server. I worked with Alexis on this project
