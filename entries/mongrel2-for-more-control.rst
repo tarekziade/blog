@@ -8,6 +8,8 @@ Mongrel2 & Circus = Full control of your web stack
 
 .. image:: https://upload.wikimedia.org/wikipedia/en/0/0b/Mongrel_2_logo.png
 
+.. role:: strike
+    :class: strike
 
 Gunicorn frustrations
 =====================
@@ -22,7 +24,7 @@ But Circus gives us much more control over the processes
 it runs. We can:
 
 - get a continuous feedback on the CPU / Memory usage, per process
-- add or remove more processes
+- :strike:`add or remove more processes`
 - basically do any maintenance operation on a live stack
 
 Also, features like the flapping control, or the `Web Console <http://circus.readthedocs.org/en/latest/circushttpd/>`_
@@ -33,11 +35,16 @@ and send back responses. From there I can drive my little workers in Circus
 as I would do for any other processes.
 
 I can't do this with Gunicorn because it uses a prefork model and deal itself with
-its processes. If I run a Gunicorn server with a single worker for instance, I can't add
-more workers once it's live.
+its processes.
 
-The socket Gunicorn binds belong to its main process and you can't run another process
-on it.
+:strike:`If I run a Gunicorn server with a single worker for instance, I can't add
+more workers once it's live.`
+
+:strike:`The socket Gunicorn binds belong to its main process and you can't run another process on it.`
+
+**edited** - *as Philip said in the comments, Gunicorn let you add/remove workers
+with the TTIN and TTOU signals, but Circus have much more control, see* :
+http://circus.readthedocs.org/en/latest/commands/#circus-ctl-commands
 
 ZeroMQ sockets are a bit different here, as you can connect as many processes as
 you want on a single socket, and have load-balancing for free.

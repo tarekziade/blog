@@ -453,3 +453,8 @@ div.note {
   font-size: 85%;
   max-width: 300px
 }
+
+.strike {
+      text-decoration: line-through;
+}
+
