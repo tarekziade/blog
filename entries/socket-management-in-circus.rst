@@ -120,6 +120,19 @@ I have found no server out there that was abstracting this enough
 for me to simply reuse it. All WSGI web servers out there can be launched
 against a host or a unix socket, not an existing file descriptor.
 
+.. note::
+
+   **Follow-up** After a few mail exchanges on WEB-SIG and with
+   the maintainer of Meinheld, I am happy to say that both uWsgi
+   and Meinheld now offer an option to run with an fd.
+
+   For example in uWsgi::
+
+        uwsgi --http-socket fd://12 -w module:app
+
+   This should be part of their next release.
+
+
 Since we have the **unix:** prefix convention for Unix Sockets,
 maybe a **fd:** prefix convention could be a nice addition.
 
