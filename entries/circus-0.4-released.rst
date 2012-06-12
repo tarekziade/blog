@@ -5,7 +5,6 @@ Circus 0.4 released
 :tags: python, mozilla
 :category: mozilla
 :author: Tarek Ziadé & Alexis Métaireau
-:status: draft
 
 
 .. image:: http://docs.circus.io/en/latest/_images/circus-architecture.png
@@ -69,15 +68,16 @@ circusd-stats performance fix
 
 We hacked on the 0.4 release at my house today, and fixed a performance
 problem we had in **circusd-stats**. The part that was calling
-**psutil** to collect stats about each process, was also collecting
+**psutil** to collect stats about each process was also collecting
 the process children stats.
 
-And it turns out psutil is a bit suboptimal here: everytime it tries
+It turns out psutil is a bit suboptimal here: everytime it tries
 to get a process parent pid, it opens under Linux the */proc/PID/status*
-file and iterate on each line until it gets the information.
+file and iterates on each line until it gets the information. This
+read operation is never cached.
 
 The effect is that on high load, **circusd-stats** was doing a bunch
-of I/O to get back an information that could be cached. And 1 call
+of I/O to get back an information that could be cached. 1 call
 against our *circus.util.get_info()* API was doing an average of
 240 calls on that file !!
 
@@ -97,11 +97,11 @@ motivation behind this being us having hard time debugging Circus when both
 threads and gevent where into play.
 
 The *circus.stats* streamer does not use threads anymore. Rather, it uses
-pyzmq's *ioloop* periodic callbacks -- see http://zeromq.github.com/pyzmq/api/generated/zmq.eventloop.ioloop.html#periodiccallback
+pyzmq's *ioloop* `periodic callbacks <http://zeromq.github.com/pyzmq/api/generated/zmq.eventloop.ioloop.html#periodiccallback>`_
 
-The previous implementation was using
-threads, locks and queues to send messages between threads, removing
-all this extra code allows to have a cleaner overview of what's going on.
+The previous implementation was using some threads and a queue to stream
+messages. Removing all this extra code allows to have a cleaner overview
+of what's going on and simplifies the implementation.
 
 Now, the *StatsStreamer* class subscribes to all Circus events and maintains
 periodic callbacks for each of the Circus watchers. The callbacks are gathering
