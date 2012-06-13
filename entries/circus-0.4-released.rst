@@ -91,6 +91,12 @@ No more call to psutil's *get_process_ppid()* and a huge boost
 in our performances -- **circusd-stats** is now *way* faster and does
 not consume the CPU at all, even on high loads.
 
+.. note::
+
+   Giampaolo fixed the issue in psutil. \o/
+
+   See: https://code.google.com/p/psutil/source/detail?r=1343
+
 
 Another change we did was to get rid of threads when we didn't needed them. The
 motivation behind this being us having hard time debugging Circus when both
