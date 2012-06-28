@@ -5,7 +5,6 @@ WGSI Web Servers Bench
 :tags: python, mozilla
 :category: mozilla
 :author: Tarek Ziade
-:status: draft
 
 .. image:: http://funkload.nuxeo.org/_static/funkload-logo-small.png
 
@@ -16,7 +15,7 @@ and in cunjunction with `Chaussette <http://chaussette.readthedocs.org>`_ you ca
 In other words, Circus can spawn as many Chaussette processes as you want, each one will act as
 a *web worker*: they'll all accept requests on the same socket.
 
-Why would you want to do this ? Because it's much more ergonomic to manage your web workers in
+Why would you want to do this? Because it's much simpler to manage your web workers in
 the same tool than the other processes you might have in your Web stack. (Redis, memcached. etc).
 
 From the `Web UI <http://circus.readthedocs.org/en/latest/circushttpd/#circushttpd>`_ or from the
@@ -30,13 +29,13 @@ So I did a few benches and this blog post is the results of my benches.
 
 **tl;dr: Circus + Chaussette + [gevent.pywsgi | meinheld] is fast and stable, we
 will gain a very slight speed bump by moving away from Gunicorn, and gain a lot of features.
-Good to go !**
+Good to go!**
 
 .. note::
 
     Publishing a bench often leads to a flamewar because it's super
     hard to do it in a fair and proper way. I tried my best in the amount of
-    time I wanted to spend on this. So if you see anything that seems wrong, let me know !
+    time I wanted to spend on this. So if you see anything that seems wrong, let me know!
 
     I'd be happy to rework things.
 
@@ -46,7 +45,7 @@ The benched app
 
 I did not want to bench an *Hello World* because this is meanlingless. If your server
 is great at Hello Worlds, maybe it will collapse on a real application because it can keep
-up with requests filling the backlog.
+up with requests filling the `backlog <https://en.wikipedia.org/wiki/Berkeley_sockets#listen.28.29>`_.
 
 I did not want either to have variations because of a third party application I'd call
 from the benched app, like a database.
@@ -163,6 +162,8 @@ Hahaha. That's the sweet part. Don't ask me how/who/where but I did my bench on 
 24-cores boxes with a indecent amount of RAM.
 
 .. image:: http://blog.ziade.org/yunocores.jpg
+   :align: right
+
 
 I am not event going to talk about tweaking the system, or mention the RAM - Just that
 I made sure the web server had enough FDs to be happy, and that I used a single
@@ -234,7 +235,7 @@ Same as Gunicorn, very very slighlty faster at 400 CUs but almost no differences
 Chaussette + fastgevent
 :::::::::::::::::::::::
 
-*gevent.wsgi* is supposedly faster. From Gevent `doc <http://www.gevent.org/servers.html>`_::
+*gevent.wsgi* is supposedly faster. From Gevent `doc <http://www.gevent.org/servers.html>`_:
 
     wsgi.WSGIServer is very fast as it uses libevent's http server implementation
     but it shares the issues that libevent-http has.
@@ -254,12 +255,12 @@ Of course that impacted the other graph by lowering the average response time.
 
 .. image:: http://blog.ziade.org/fastgevent_requests.png
 
-A connection refused error is very fast to come back ! :)
+A connection refused error is very fast to come back! :)
 
 Chaussette + meinheld
 :::::::::::::::::::::
 
-Wooo meinheld is awesome !
+Wooo meinheld is awesome!
 
 The RPS is is *slightly* better :
 
@@ -288,4 +289,4 @@ monkey pacthing.
 I also need to investigate on why fastgevent failed that way. There's a high probability
 I screwed things up when I embed it in Chaussette.
 
-Btw, did I mention Chaussette can now be `used with Django <http://chaussette.readthedocs.org/en/latest/index.html#running-a-django-application>`_ ?
+Btw, did I mention Chaussette can now be `used with Django <http://chaussette.readthedocs.org/en/latest/index.html#running-a-django-application>`_?
