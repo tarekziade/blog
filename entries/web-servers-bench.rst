@@ -1,10 +1,11 @@
-WGSI Web Servers Bench
+WSGI Web Servers Bench
 ######################
 
 :date: 2012-06-28 14:50
 :tags: python, mozilla
 :category: mozilla
 :author: Tarek Ziade
+:slug: wgsi-web-servers-bench
 
 .. image:: http://funkload.nuxeo.org/_static/funkload-logo-small.png
 
