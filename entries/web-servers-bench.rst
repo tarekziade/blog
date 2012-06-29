@@ -10,12 +10,6 @@ WSGI Web Servers Bench
 .. image:: http://funkload.nuxeo.org/_static/funkload-logo-small.png
 
 
-.. note::
-
-    Oops I mispelled WSGI in the title. I can mess with this
-    now or it'd change the URLs...  My bad.
-
-
 Circus is now able to `bind and manage sockets <http://circus.readthedocs.org/en/latest/sockets/#sockets>`_,
 and in cunjunction with `Chaussette <http://chaussette.readthedocs.org>`_ you can run a full web stack.
 
