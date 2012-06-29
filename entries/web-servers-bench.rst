@@ -11,7 +11,8 @@ WSGI Web Servers Bench
 
 
 Circus is now able to `bind and manage sockets <http://circus.readthedocs.org/en/latest/sockets/#sockets>`_,
-and in cunjunction with `Chaussette <http://chaussette.readthedocs.org>`_ you can run a full web stack.
+and in cunjunction with `Chaussette <http://chaussette.readthedocs.org>`_ you can run a full web stack
+behind your favorite Web Server (Nginx, Apache etc.) -- read more about Circus stacks `here <http://circus.readthedocs.org/en/latest/sockets/#whycircussockets>`_.
 
 In other words, Circus can spawn as many Chaussette processes as you want, each one will act as
 a *web worker*: they'll all accept requests on the same socket.
