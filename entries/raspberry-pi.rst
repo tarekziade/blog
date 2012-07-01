@@ -31,7 +31,7 @@ The final project will be a small box containing the R-Pi and a few peripherals:
   R-Pi have enough power so the wifi usb stick works ? If not I'll have to add
   a powered USB hub, and figure out how to plug it into the battery.
 
-- A mini speaker. I ordered `this one <http://www.amazon.fr/gp/product/B001UEBN42>`_
+- A mini speaker. I ordered `that one <http://www.amazon.fr/gp/product/B001UEBN42>`_
   because it seems like a very good speaker according to the reviews. It
   can be charged via USB as well, and you can chain several one of them.
   I don't expect a rich sound with deep bass given the speaker width, but
