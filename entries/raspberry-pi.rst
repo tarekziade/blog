@@ -208,4 +208,4 @@ I'll follow up when I get all my peripherals, and try to come up with a
 cool box. I love this small computer.
 
 
-.. |smile| image:: smile.gif
+.. |smile| image:: http://blog.ziade.org/smile.gif
