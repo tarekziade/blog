@@ -8,7 +8,7 @@ A Raspberry Pi Juke Box (How-to)
 
 .. image:: http://www.raspberrypi.org/wp-content/uploads/2011/07/raspi_blue_white.png
 
-After 3 months of desesperate wait, I finally received my Raspberry Pi (R-Pi) box
+After 3 months of desperate wait, I finally received my Raspberry Pi (R-Pi) box
 from Farnell, including a nice Element 14 T-Shirt.
 
 I had a few projects in mind involving some hardware hacking, and ended up deciding
@@ -38,7 +38,7 @@ The final project will be a small box containing the R-Pi and a few peripherals:
   as long as it's clear enough I am happy. And I can always plug a real set
   of speakers if needed.
 
-So, until I receive the speaker, the battery and the wifi stick, I can
+So, until I receive the speaker, the battery and the Wifi stick, I can
 start and build the system.
 
 
@@ -68,14 +68,14 @@ Python script called `RasPiWrite <http://exaviorn.com/raspiwrite>`_ for
 this, but it bugged for me so I did it by hand. You basically get an
 image and *dd* it on the card.
 
-I used the default debian the R-Pi project provides::
+I used the default Debian the R-Pi project provides::
 
     cd /tmp
     wget http://files.velocix.com/c1410/images/debian/6/debian6-19-04-2012/debian6-19-04-2012.zip
     unzip debian6-19-04-2012.zip
 
 Once you have the image on your disk, just plug the SD card to your computer,
-umount any parition that gets mounted and create the disk::
+unmount any partition that gets mounted and create the disk::
 
     diskutil umount /dev/disk2s1
     sudo dd bs=1m if=debian6-19-04-2012.img of=/dev/disk2
@@ -85,7 +85,7 @@ My first attempt failed because I was calling *dd* on **/dev/disk2s1**, not
 on the root - **/dev/disk2**. It was copying the image but the R-Pi was not
 booting of course.
 
-Once you have it right, plug it and run yout R-Pi. You should get a prompt
+Once you have it right, plug it and run your R-Pi. You should get a prompt
 to log in. The R-Pi user is **pi** and the password **raspberry**.
 
 .. note::
@@ -110,11 +110,11 @@ Once your R-Pi happily runs, it's time to update your system so you have all the
 required packages.
 
 If you applied all Gordons tips, you should be able to access to your R-Pi from
-your computer via SSH by pluging it to your local network. Booting the Pi with the
+your computer via SSH by plugging it to your local network. Booting the Pi with the
 network cable plugged will DHCP for you. The IP is displayed somewhere in the
 startup screen. Or just *nmap 192.168.1.** on your network.
 
-I higly recommend to work via SSH because the video output resolution is
+I highly recommend working via SSH because the video output resolution is
 really bad by default and will burn your eyes. Maybe there's a simple way
 to change the resolution but I failed to do so.
 
@@ -141,7 +141,7 @@ If you want to go back to the HDMI output, just do::
 
     sudo amixer cset numid=3 2
 
-Then try a wav file to check that it works::
+Then try a WAV file to check that it works::
 
     wget http://www.freespecialeffects.co.uk/soundfx/sirens/police_s.wav
     aplay police_s.wav
@@ -157,11 +157,11 @@ I had to manually mount my disk::
     sudo mkdir /media/usbstick
     sudo mount -t vfat  -o uid=pi,gid=pi /dev/sda1 /media/usbstick/
 
-I then tried to play a mp3 file::
+I then tried to play a MP3 file::
 
     mpg123 "/media/usbstick/Renegades Of Jazz - Go Jazz Not Ape! Vol.2.mp3"
 
-Great success \o/ -- and great mix from ParisDjs.net
+Great success \\o/ -- and great mix from `ParisDjs <http://parisdjs.com>`_.
 
 
 JukeBox
@@ -174,7 +174,7 @@ installing Gstreamer.
 But after 3 hours of trying to make it work, installing many packages, and
 trying to understand why this #%*! alsasink failed with gstreamer, I just
 wiped my image and went for a simpler solution on the top of *mpeg123*,
-which works really well and don't have all those dependencies like GTK.
+which works really well and don't have all those dependencies like GTK.;
 
 And then I found `Jukebox <https://github.com/lociii/jukebox>`_ which is
 *exactly* what I wanted to write. And it works with *mpeg123* so why
@@ -195,7 +195,7 @@ To install Jukebox, simply create a new virtualenv with a fresh Distribute::
 Then just follow the instructions on the `Jukebox github <https://github.com/lociii/jukebox>`_.
 everything should go smoothly with the libraries installed previously.
 
-Yay, I have a R-Pi Jukebox \o/
+Yay, I have a R-Pi Jukebox \\o/
 
 It sucks almost 100% of the CPU - Maybe I should profile the Python app, because
 it's the one sucking the CPU, not the mp3 player.
