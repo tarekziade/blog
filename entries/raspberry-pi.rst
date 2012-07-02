@@ -161,7 +161,7 @@ I then tried to play a MP3 file::
 
     mpg123 "/media/usbstick/Renegades Of Jazz - Go Jazz Not Ape! Vol.2.mp3"
 
-Great success \\o/ -- and great mix from `ParisDjs <http://parisdjs.com>`_.
+Great success |smile| -- and great mix from `ParisDjs <http://parisdjs.com>`_.
 
 
 JukeBox
@@ -195,7 +195,7 @@ To install Jukebox, simply create a new virtualenv with a fresh Distribute::
 Then just follow the instructions on the `Jukebox github <https://github.com/lociii/jukebox>`_.
 everything should go smoothly with the libraries installed previously.
 
-Yay, I have a R-Pi Jukebox \\o/
+Yay, I have a R-Pi Jukebox  |smile|
 
 It sucks almost 100% of the CPU - Maybe I should profile the Python app, because
 it's the one sucking the CPU, not the mp3 player.
@@ -208,3 +208,4 @@ I'll follow up when I get all my peripherals, and try to come up with a
 cool box. I love this small computer.
 
 
+.. |smile| image:: smile.png
