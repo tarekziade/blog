@@ -6,8 +6,7 @@ My Raspberry Pi Juke Box (Follow up)
 :category: python
 :author: Tarek Ziade
 
-.. image:: http://blog.ziade.org/rpi-jukebox.jpg
-   :width: 500px
+.. image:: http://blog.ziade.org/rpi-jukebox-mini.jpg
    :target: http://blog.ziade.org/rpi-jukebox.jpg
 
 
