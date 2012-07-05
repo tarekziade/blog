@@ -8,6 +8,11 @@ A Raspberry Pi Juke Box (How-to)
 
 .. image:: http://www.raspberrypi.org/wp-content/uploads/2011/07/raspi_blue_white.png
 
+.. note::
+
+   Follow-up on the hardware: http://blog.ziade.org/2012/07/04/my-raspberry-pi-juke-box-follow-up
+
+
 After 3 months of desperate wait, I finally received my Raspberry Pi (R-Pi) box
 from Farnell, including a nice Element 14 T-Shirt.
 
@@ -204,8 +209,8 @@ it's the one sucking the CPU, not the mp3 player.
 What's next
 ===========
 
-I'll follow up when I get all my peripherals, and try to come up with a
-cool box. I love this small computer.
+I received the hardware and built a lego case: http://blog.ziade.org/2012/07/04/my-raspberry-pi-juke-box-follow-up
+I love this small computer.
 
 
 .. |smile| image:: http://blog.ziade.org/smile.gif

@@ -9,6 +9,9 @@ My Raspberry Pi Juke Box (Follow up)
 .. image:: http://blog.ziade.org/rpi-jukebox-mini.jpg
    :target: http://blog.ziade.org/rpi-jukebox.jpg
 
+.. image:: http://blog.ziade.org/rpi-lego-mini.jpg
+   :target: http://blog.ziade.org/rpi-lego.jpg
+
 
 Just a follow-up on my `Raspberry Pi Juke Box project <http://blog.ziade.org/2012/07/01/a-raspberry-pi-juke-box-how-to/>`_.
 
