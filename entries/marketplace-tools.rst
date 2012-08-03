@@ -17,7 +17,7 @@ with the fine folks from the WebDev team on the web app called
 We're joining the *Marketplace team* with Alexis and a couple
 of other folks from Services to try to help them polishing
 the app before it moves from its *preview* stage to
-*production*.
+full speed.
 
 **Marketplace** is the Django-based application WebDev wrote
 to allow the community to publish Open Web Apps that will
@@ -129,7 +129,7 @@ the application errors with the proxy actions.
 
 It's also meant to be completely pluggable, so if you have a
 specific back end behavior you want to simulate, you can write a
-Python function for it and hook it via confiuguration.
+Python function for it and hook it via configuration.
 
 The tool is currently using a configuration file where you
 define a list of behaviors -- from "normal" to "total blackout" --,
