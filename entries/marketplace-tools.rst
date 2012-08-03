@@ -21,7 +21,8 @@ full speed.
 
 **Marketplace** is the Django-based application WebDev wrote
 to allow the community to publish Open Web Apps that will
-be installable on your Firefox OS based phone.
+be installable on your `Firefox OS <https://www.mozilla.org/en-US/b2g>`_
+phone.
 
 This app is a derivation of the addons web app, using the same
 basis: `Zamboni <https://github.com/mozilla/zamboni>`_ -- except
