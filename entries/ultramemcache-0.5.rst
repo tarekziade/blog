@@ -15,8 +15,6 @@ where we were busting the Moxi server on high loads.
 The Moxi server is a proxy the Membase server runs so the Membase server
 becomes compatible with any Memcache client.
 
-Moxi is provided in Membase and runs by default on every node.
-
 What is does is query all the Membase nodes, build a graph and decide
 depending on the key, which node should be called.
 
