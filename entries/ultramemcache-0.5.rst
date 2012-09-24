@@ -60,7 +60,8 @@ worker, keeping more than one connection is not really useful. But as soon as
 you switch to an async worker using Gevent or whatever, you'll need to be able to have
 several connections at the same time so it does not become a bottleneck.
 
-I've also decided to use **umemcache** in **django-memcached-pool** for these reasons:
+I've also decided to use `umemcache <http://pypi.python.org/pypi/umemcache>`_
+in **django-memcached-pool** for these reasons:
 
 - it's pretty damn fast
 - it uses plain CPython sockets, so if you run it with Gevent and call its monkey
@@ -86,7 +87,7 @@ The other issue was that umemcache did not let me configure the socket timeout
 when I was creating a new Client instance. The socket object was not *published*
 as an attribute in the CPython Client class.
 
-So I've contributed those small features and Jonas nicely merged then and pushed
+So I've contributed those small features and Jonas nicely merged them and pushed
 a 0.5 on PyPI. yay OSS \\o/
 
 **umemcache** is now a good replacement for **python-memcache**
