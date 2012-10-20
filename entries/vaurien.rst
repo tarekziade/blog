@@ -89,7 +89,7 @@ Within the **with** block, the proxy will error out any call by using
 the *errors* handler, so you can verify that your application is
 behaving as expected when it happens.
 
-A **handler** is a piece of code that is code by the proxy and does
+A **handler** is a piece of code that is called by the proxy and does
 whatever it wants with the incoming request. In our case it errors
 out :)
 
