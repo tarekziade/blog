@@ -25,8 +25,8 @@ team to interact with the infrastucture and also build cool tools.
 Being a Devops for Mozilla is quite a job -- given the huge amount
 of traffic we get on most projects.
 
-If you are an Ops/Devops, located in Europe (anywhere!) and if you like Python as much
-as we do -- please apply !
+If you are an Ops/Devops, located in Europe (possible countries listed in the link) and
+if you like Python as much as we do -- please apply !
 
 The job description: http://jobvite.com/m?3dQRzfwd
 
