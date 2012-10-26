@@ -19,7 +19,7 @@ Then Hanno & Alexis joined, which is really cool since we now have daily meeting
 and can chat together at daytime while the rest of the team is sleeping.
 
 Although, there's one missing person to make that European team more efficient:
-an engineer that can work with us on our project -- and allow the
+a Devops/Ops engineer that can work with us on our project -- and allow the
 team to interact with the infrastucture and also build cool tools.
 
 Being a Devops for Mozilla is quite a job -- given the huge amount
