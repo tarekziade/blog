@@ -365,7 +365,6 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	display: block;
 	clear: both;
 	border-bottom: 1px solid #eee;
-	padding: 1.5em 0;
 }
 li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #content > .hentry {padding: 1em 0;}
@@ -382,7 +381,7 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	#posts-list footer address {display: block;}
 
 	/* Blog Index */
-	#posts-list {list-style: none; margin: 0;}
+	#posts-list {list-style: none; margin: 0; font-size: 70%}
 	#posts-list .hentry {padding-left: 10px; position: relative;}
 	
 	#posts-list footer {
