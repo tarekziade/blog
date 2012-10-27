@@ -50,7 +50,7 @@ hr { border: 2px solid #EEEEEE; }
 a {outline: 0;}
 a img {border: 0px; text-decoration: none;}
 a:link, a:visited {
-	color: #C74350;
+	color: black;
 	padding: 0 1px;
 	text-decoration: underline;
 }
