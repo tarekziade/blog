@@ -18,13 +18,13 @@ TAG_FEED_RSS  = 'tag/%s/feed'
 CATEGORY_FEED_RSS = 'category/%s/feed'
 ARTICLE_PERMALINK_STRUCTURE = '/%Y/%m/%d/'
 MENUITEMS = [('Home', '/'),
+             ('Projects', '/projects.html'),
              ('Books', '/books.html'),
-             ('Resume', '/resume.html'),
-             ('Contact me', '/contact.html'),
+             ('About Me', '/resume.html'),
              ('Tools', '/tools.html')]
 THEME = 'theme'
 
 STATIC_PAGES = {'/books.html': 'static/books.html',
                 '/resume.html': 'static/resume.html',
-                '/contact.html': 'static/contact.html',
+                '/projects.html': 'static/projects.html',
                 '/tools.html': 'static/tools.html'}
