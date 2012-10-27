@@ -178,8 +178,8 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 		font-weight: bold;
 		margin: 0 0 .6em .2em;
 		text-decoration: none;
-		width: 427px;
-        font-size: 70%;
+		width: 627px;
+        font-size: 100%;
 	}
 	#banner h1 a:hover, #banner h1 a:active {
 		background: none;
