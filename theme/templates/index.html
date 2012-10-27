@@ -7,9 +7,10 @@
         {# First item #}
         {% if loop.first and not articles_page.has_previous() %}
             <aside id="featured" class="body">
-                <article>
+            <article>
+                    {% include 'article_infos.html' %}
                     <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1> 
-                    {% include 'article_infos.html' %}{{ article.content }}{% include 'comments.html' %}
+                    {{ article.content }}{% include 'comments.html' %}
                 </article>
                 {% if loop.length == 1 %}
                     {% include 'pagination.html' %}
@@ -31,13 +32,6 @@
                 <header>
                         <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a></h1>
                 </header>
-                
-                <div class="entry-content">
-                {% include 'article_infos.html' %}
-                {{ article.summary }}
-                <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">read more</a>
-                {% include 'comments.html' %}
-                </div><!-- /.entry-content -->
             </article></li>
         {% endif %}
         {% if loop.last and (articles_page.has_previous() 

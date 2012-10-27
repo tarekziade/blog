@@ -11,14 +11,14 @@
 @import url("reset.css");
 @import url("pygment.css");
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&subset=latin);
+@import url(http://fonts.googleapis.com/css?family=Quando);
 
 /***** Global *****/
 /* Body */
 body {
-    background: #F5F4EF;
     color: #000305;
-    font-size: 87.5%; /* Base font size: 14px */
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 70.5%; /* Base font size: 14px */
+    font-family: 'Quando', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.429;
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	line-height: 1.1;
 	margin-bottom: .8em;
-    font-family: 'Yanone Kaffeesatz', arial, serif;
+    font-family: 'Quando', arial, serif;
 }
 
 h3, h4, h5, h6 { margin-top: .8em; }
@@ -66,7 +66,11 @@ h1 a:hover {
 }
 	
 /* Paragraphs */
-p {margin-bottom: 1.143em;}
+p {
+    margin-bottom: 1.143em;
+    font-size: 130%;
+    text-align: justify;
+}
 
 strong, b {font-weight: bold;}
 em, i {font-style: italic;}
@@ -78,11 +82,17 @@ em, i {font-style: italic;}
 ul {
 	list-style: outside disc;
 	margin: 1em 0 1.5em 1.5em;
+    font-size: 130%;
 }
 
+li p {
+    font-size: 100%;
+
+}
 ol {
 	list-style: outside decimal;
 	margin: 1em 0 1.5em 1.5em;
+    font-size: 130%;
 }
 
 .post-info {
@@ -148,7 +158,7 @@ aside, nav, article, figure {
 }
 
 /***** Layout *****/
-.body {clear: both; margin: 0 auto; width: 800px;}
+.body {clear: both; margin: 0 auto; width: 900px;}
 img.right figure.right {float: right; margin: 0 0 2em 2em;}
 img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 
@@ -169,6 +179,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 		margin: 0 0 .6em .2em;
 		text-decoration: none;
 		width: 427px;
+        font-size: 70%;
 	}
 	#banner h1 a:hover, #banner h1 a:active {
 		background: none;
@@ -180,21 +191,21 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	
 	/* Main Nav */
 	#banner nav {
-		background: #000305;
+		background: gray;
 		font-size: 1.143em;
 		height: 40px;
 		line-height: 30px;
 		margin: 0 auto 2em auto;
 		padding: 0;
 		text-align: center;
-		width: 800px;
+		width: 900px;
 		
 		border-radius: 5px;
 		-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;
 	}
 	
-	#banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
+	#banner nav ul {list-style: none; margin: 0 auto; width: 900px;}
 	#banner nav li {float: left; display: inline; margin: 0;}
 	
 	#banner nav a:link, #banner nav a:visited {
@@ -229,7 +240,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	margin-bottom: 2em;
 	overflow: hidden;
 	padding: 20px;
-	width: 760px;
+	width: 860px;
 	
 	border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -258,7 +269,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	margin-bottom: 2em;
 	overflow: hidden;
 	padding: 20px 20px;
-	width: 760px;
+	width: 860px;
 	
 	border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -328,7 +339,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	overflow: hidden;
 	padding: 20px;
 	text-align: left;
-	width: 760px;
+	width: 860px;
 	
 	border-radius: 10px;
 	-moz-border-radius: 10px;
