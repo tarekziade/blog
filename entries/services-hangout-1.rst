@@ -27,7 +27,7 @@ The first hangout is composed of two parts:
 
 tools we discuss during the hangout:
 
-- ZKTools = http://zktools.rtfd.org
+- Kazoo = https://kazoo.readthedocs.org
 - Circus = http://circus.io
 - Vaurien = http://vaurien.rtfd.org
 
