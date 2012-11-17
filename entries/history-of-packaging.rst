@@ -39,3 +39,7 @@ here's a blog post with more details.
 - 2012: The wheel binary format is proposed
 - 2012: Distlib, a subset of Distutils2. Is launched.
 
+
+The diagrams were made with Omnigraffle - under cc-by-nc. Let me know
+if you want the sources.
+
