@@ -47,7 +47,7 @@ thing.
 
 .. note::
 
-   I am focusing on women here because that's what I
+   I am focusing on gender issues here because that's what I
    am interested in. But most of this apply to any
    other group that is sub-represented in OSS
 
