@@ -122,7 +122,7 @@ may or may not be reached.
 
 Unfortunately, I have come to the conclusion that these kind of actions are
 sometimes done, but **in secrecy** to avoid any community flame. I have
-witnessed it, and for some conferences I am pretty sure it's happening ;)
+witnessed it, and for some conferences I am pretty sure it's happening.
 
 I think it would be better to have this kind of action an official action
 to promote diversity.
