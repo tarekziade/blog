@@ -20,7 +20,7 @@ More info: http://lacantine.org/events/vous-apprendrez-bien-un-peu-python-2
 ----
 
 Une formation gratuite pour debuter en Python a lieu a Paris le 13 decembre.
-J'encourageons particulierement les fmmes a venir. Elles se verront offrir un livre
+J'encourage particulierement les femmes a venir. Elles se verront offrir un livre
 `Eyrolles <http://www.editions-eyrolles.com>`_. (les 10 premieres inscrites)
 
 Inscrivez vous sur http://lacantine.org/events/vous-apprendrez-bien-un-peu-python-2
