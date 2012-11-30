@@ -7,19 +7,20 @@ Formation Python + Livres
 :author: Tarek Ziadé
 
 
-If you are a woman, want to learn Python and happen to be in Paris December the 13th,
-`Eyrolles <http://www.editions-eyrolles.com>`_
-will offer a book to the ten first women to subscribe to the event. The event is **free** -
-you just need to register on the page.
+A free Python course will be held in Paris December the 13th. Everyone is welcome
+but I encourage woman to participate to this event.
+
+`Eyrolles <http://www.editions-eyrolles.com>`_ will offer a book to the 10 first
+women that register to the event.
 
 The event will be held in French.
 
-More infos: http://lacantine.org/events/vous-apprendrez-bien-un-peu-python-2
+More info: http://lacantine.org/events/vous-apprendrez-bien-un-peu-python-2
 
 ----
 
 Une formation gratuite pour debuter en Python a lieu a Paris le 13 decembre.
-Nous encourageons particulièrement les femm a venir, qui se voient offrir un livre
+J'encourageons particulierement les fmmes a venir. Elles se verront offrir un livre
 `Eyrolles <http://www.editions-eyrolles.com>`_. (les 10 premieres inscrites)
 
 Inscrivez vous sur http://lacantine.org/events/vous-apprendrez-bien-un-peu-python-2
