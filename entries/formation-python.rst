@@ -20,11 +20,14 @@ More infos: http://lacantine.org/events/vous-apprendrez-bien-un-peu-python-2
 
 Si vous etes une femme et souhaitez vous initier a Python - une formation **gratuite** a lieu a Paris
 le 13 decembre. `Eyrolles <http://www.editions-eyrolles.com>`_
-offre un livre aux 10 premières femmes inscrits.
+offre un livre aux 10 premières femmes inscries.
 
 Inscrivez vous sur http://lacantine.org/events/vous-apprendrez-bien-un-peu-python-2
 
 Il n'y a que 15 places !
+
+Les livres seront a retirer a la librairie Eyrolles a Paris des que les inscriptions
+seront fermees.
 
 
 
