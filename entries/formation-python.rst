@@ -8,7 +8,7 @@ Formation Python + Livres
 
 
 A free Python course will be held in Paris December the 13th. Everyone is welcome
-but I encourage woman to participate to this event.
+but I encourage women to participate to this event.
 
 `Eyrolles <http://www.editions-eyrolles.com>`_ will offer a book to the 10 first
 women that register to the event.
