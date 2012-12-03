@@ -15,7 +15,7 @@ This week-end I went to the `AngelHack <http://angelhack.com/>`_ hackaton in Par
 & `Ronan <https://twitter.com/amicel>`_. We teamed up to build a web
 application from scratch in 24 hours,
 from Saturday 12 am to Sunday 12 am. Ronan had to go home at some
-point but Olivier and I stayed up until now... :)
+point but Olivier and I stayed up all night... :)
 
 http://whatthefeuille.com is a web app we created to let you find
 out from what tree or plant a leaf is.
