@@ -55,7 +55,7 @@ to slow down or break the connection.
 We're currently using Vaurien to see how the Marketplace app reacts when something goes
 wrong in the backends.
 
-Vaurien is now organized in **protocolis** and **behaviors**. A *protocol* is a plugin
+Vaurien is now organized in **protocols** and **behaviors**. A *protocol* is a plugin
 used to process a request sent to a specific backend- like *mysql*, *redis* etc..
 A *behavior* is a class that degrades how the proxy works, like adding a *delay*
 on every request.
@@ -94,5 +94,5 @@ amount of load.
 
 Links:
 
-* Get it & read about it at http://pypi.python.org/pypi/boom/0.2
+* Get it & read about it at http://pypi.python.org/pypi/boom/0.3
 
