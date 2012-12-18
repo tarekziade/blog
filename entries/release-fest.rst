@@ -35,9 +35,9 @@ a big release that bring in a **lot** of fixes and some exciting new features:
 - *circusctl* now has autocompletion and inline help for commands.
 
 - It's getting easier to configure Circus, in particular
-  `environment variable <https://circus.readthedocs.org/en/0.6/configuration/#env-watchers-as-many-sections-as-you-want>`_
+  `environment variables <https://circus.readthedocs.org/en/0.6/configuration/#env-watchers-as-many-sections-as-you-want>`_
 
-- We improved documentation about `installing <http://circus.readthedocs.org/en/0.6/installation/>`_
+- We improved the documentation about `installing <http://circus.readthedocs.org/en/0.6/installation/>`_
   Circus and deploying its `web dashboard <http://circus.readthedocs.org/en/0.6/circushttpd/>`_.
 
 Links:
@@ -55,9 +55,10 @@ to slow down or break the connection.
 We're currently using Vaurien to see how the Marketplace app reacts when something goes
 wrong in the backends.
 
-Vaurien is now organized in **protocol** and **behaviors**. A *protocol* is a plugin
+Vaurien is now organized in **protocolis** and **behaviors**. A *protocol* is a plugin
 used to process a request sent to a specific backend- like *mysql*, *redis* etc..
-A *behavior* is a class that degrades how the proxy works, like adding a *delay*.
+A *behavior* is a class that degrades how the proxy works, like adding a *delay*
+on every request.
 
 This new version fixes some bugs and adds `more protocols <http://vaurien.readthedocs.org/en/1.5/protocols.html>`_.
 
@@ -87,7 +88,7 @@ Links:
 Boom! 0.3
 :::::::::
 
-Boom! is your Apache Bench replacement. It's based on Gevent so you can spawn a fair
+Boom! is your Apache Bench replacement. It's based on Gevent so you can send a fair
 amount of load.
 
 
