@@ -82,7 +82,7 @@ This release has 2 new features:
 Links:
 
 * Get it at http://pypi.python.org/pypi/chaussette/0.6
-* Get the docs at http://chaussette.readthedocs.org/en/0.6
+* Get the docs at http://chaussette.readthedocs.org/en/0.6/
 
 
 Boom! 0.3
