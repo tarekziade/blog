@@ -28,7 +28,7 @@ an issue anymore, now that *PyZMQ* includes a *green* subpackage.
 **2. What new programming technique did you learn in 2012 ?**
 
 Since most of my projects now use Gevent - I learned **how to detect and fix bugs
-related to Gevent being used**. Things like: a program using the stdlib Queue module
+related to Gevent interactions**. Things like: a library using the stdlib Queue module
 and that suddenly locks.
 
 This does not sound like an extraordinary thing, but I've seen people banging their
