@@ -36,14 +36,14 @@ heads for hours on those. I banged my own head quite hard but I am getting bette
 and fixing those now.
 
 
-**3. What’s the name of the open source project you contributed the most in 2012 ? What did you do ?**
+**3. Which open source project did you contribute to the most in 2012 ? What did you do ?**
 
 **Circus**. I've coded a big chunk of it - and worked in most areas except the signals -
 https://github.com/mozilla-services/circus/graphs/contributors with Alexis and a couple of new
 contributors. Benoit is #2 with over 300k lines but that's because he accidentaly commited a 300k lines log file ;)
 
 
-**4. What was the Python blog or website you read the most in 2012 ?**
+**4. Which Python blog or website did you read the most in 2012 ?**
 
 Reddit again this year.
 
@@ -54,7 +54,7 @@ In 2013 I want to learn more about **photography**, **electronics** & **writing*
 related to Python this time :-)
 
 
-**6. What are the top software, app or lib you wish someone would write in 2013 ?**
+**6. What is the top software, application or library you wish someone would write in 2013 ?**
 
 I whish we could continue our cool *leaf recognizer* project with Olivier & Ronan:
 http://whatthefeuille.com/ - because it would be a great app if it takes off.
