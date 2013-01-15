@@ -20,9 +20,10 @@ I'll also present Vaurien, the tool we're building at Mozilla.
 ----
 
 My only regret is that we don't have any women as speakers.
-I tried to communicate towards women and encourage
-them to submit talks, but out of all our proposal we did not
-have any.
+
+Since I am part of the organizers team, I tried to communicate
+towards women and encourage them to submit talks, but out of all
+our proposal we did not have any.
 
 I've also discovered it can be quite hard to promote diversity.
 I had an invited blog post on the Pycon blog here:
@@ -43,7 +44,7 @@ While I can't understand why I was not warned about this change,
 I can understand that some people don't want to ignite yet another
 war on diversity etc. When I asked about this change I was told
 it was made to make things "easier for me" - so I just asked to
-be removed from the list of authors and moved along.
+be removed from the list of authors and just moved along.
 
 But I (and I don't engage other FOSDEM organizers here, this
 are my own actions) think
@@ -56,4 +57,5 @@ And I feel a bit ashamed the FOSDEM Python room will be 100% men
 speakers (unless of course I am making mistakes about
 finding out the genre of each first names in the list).
 
-
+If I am still involved next year, I'll try to do better -
+and find the right allies to push on diversity.
