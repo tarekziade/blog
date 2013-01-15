@@ -46,7 +46,7 @@ war on diversity etc. When I asked about this change I was told
 it was made to make things "easier for me" - so I just asked to
 be removed from the list of authors and just moved along.
 
-But I (and I don't engage other FOSDEM organizers here, this
+But I (and I don't engage other FOSDEM organizers here, these
 are my own actions) think
 that sentence was fine even if it could have been worded better.
 
