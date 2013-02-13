@@ -77,7 +77,12 @@ A code like this...
 
 .. code-block:: python
 
-    import urllib2, gevent
+    # from https://github.com/SiteSupport/gevent/blob/master/examples/concurrent_download.py
+    import gevent
+    from gevent import monkey
+    monkey.patch_all()
+
+    import urllib2
 
     urls = ['http://www.google.com', 'http://www.yandex.ru', 'http://www.python.org']
 
