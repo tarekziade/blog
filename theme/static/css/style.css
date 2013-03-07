@@ -444,3 +444,26 @@ body{
         p, h2, h3 { orphans: 3; widows: 3; }
         h2, h3{ page-break-after: avoid; }
     }
+
+h1.blog-title a,
+h2.blog-title a{
+        color:#e9573f;
+        font-weight:300;
+    }
+
+h1.blog-title a:hover,
+h2.blog-title a:hover{
+        font-weight:300;
+        text-decoration:underline;
+    }
+
+h1.blog-title{font-size:2em;}
+ h2.blog-title{font-size:1.5em;}
+
+div.tag {
+	font-size: 1.5em;
+}
+div.tag a {
+ color: rgb(233, 87, 63);
+ margin-right: 4px 
+}

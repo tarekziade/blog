@@ -1,9 +1,18 @@
-<footer class="post-info">
-        <abbr class="published" title="{{ article.date.isoformat() }}">
-                {{ article.locale_date }}
-        </abbr>
+<aside class="sidebar">
+<h3 class="published" title="{{ article.date.isoformat() }}">
+               {{ article.locale_date }}
+</h3>
 
-<p>In <a href="{{ SITEURL }}/category/{{ article.category }}.html">{{ article.category }}</a>. {% if PDF_PROCESSOR %}<a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">get the pdf</a>{% endif %}</p>
+<p>
+<div class="tag">
+  Published in <a href="{{ SITEURL }}/category/{{ article.category }}.html">{{
+    article.category }}</a>
+  
+   
+    </div>
+
 {% include 'taglist.html' %}
 {% include 'translations.html' %}
-</footer><!-- /.post-info -->
+</p>
+
+</aside><!-- /.post-info -->
