@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title }}{% endblock %}
 {% block content %}        
-<section id="content" class="body">    
+<section class="content blog">    
+<div class="constraint"> 
+<div class="posts">
 <article>
         <header> <h1 class="entry-title"><a href="{{ pagename }}"
         rel="bookmark" title="Permalink to {{ article.title }}">{{ article.title
@@ -25,6 +27,8 @@
         </div>
         {% endif %}
 
-</article>
+        </article>
+      </div>
+      </div>
 </section>
 {% endblock %}
