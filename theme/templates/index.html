@@ -12,7 +12,9 @@
 
             <article>
                     <h1 class="blog-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1> 
-                    {{ article.content }}{% include 'comments.html' %}
+					{{ article.content }}
+					
+					<p><a href="{{ SITEURL }}/{{ article.url }}#disqus_thread">Comments & Reactions</a></p>
                 </article>
                 {% if loop.length == 1 %}
                     {% include 'pagination.html' %}
