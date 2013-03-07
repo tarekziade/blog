@@ -6,11 +6,11 @@ section, article, header, footer, nav, aside, hgroup{
 
 @font-face {
     font-family: 'MenschRegular';
-    src: url('http://blog.ziade.org/fonts/mensch-wf.eot');
-    src: url('http://blog.ziade.org/fonts/mensch-wf.eot?#iefix') format('embedded-opentype'),
-         url('http://blog.ziade.org/fonts/mensch-wf.woff') format('woff'),
-         url('http://blog.ziade.org/fonts/mensch-wf.ttf') format('truetype'),
-         url('http://blog.ziade.org/fonts/mensch-wf.svg#MenschMenschRegular') format('svg');
+    src: url('/fonts/mensch-wf.eot');
+    src: url('/fonts/mensch-wf.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/mensch-wf.woff') format('woff'),
+         url('/fonts/mensch-wf.ttf') format('truetype'),
+         url('/fonts/mensch-wf.svg#MenschMenschRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
