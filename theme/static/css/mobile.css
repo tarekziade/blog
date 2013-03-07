@@ -1,0 +1,80 @@
+/* - MOBILE STYLES
+---------------------------------------------- */
+
+/* 4.Tablet landscape / low resolution */
+@media only screen and (min-width: 870px) and (max-width: 1170px){
+
+    .constraint{ width:870px; }
+    .posts {
+        float:none;
+        width:auto;
+    }
+
+    article p,
+    article li{ font-size:1.5em; }
+    article h1.blog-title{font-size:3em;}
+    article h2.blog-title{font-size:3em;}
+    ul.books li:first-child{margin-left:0;}
+    ul.books li.last{margin-right: 0;}
+}
+
+
+/* 2. Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 570px) and (max-width: 869px){
+
+    body{font-size:0.5em;}
+    #header div.nav{
+        display:block;
+        width:90%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .constraint{width:570px;}
+    .posts {
+        float:none;
+        width:auto;
+    }
+    aside.sidebar{display:none;}
+    ul.books li:first-child{margin-left:0;}
+    ul.books li.last{margin-right:0px;}
+    ul.books li:nth-child(even) {margin-right: 0px;}
+}
+
+
+/* 1. Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 569px){
+
+    body{font-size:0.5em;}
+    .constraint{width:90%;}
+    .posts {
+        float:none;
+        width:auto;
+    }
+
+    .branding .introduction{font-size:2.5em;}
+    .branding .strapline{font-size:2em;}
+
+    #header .o h1{ text-align: center; font-size: 30px;}
+
+    #header .nav{
+        display:block;
+        width:95%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
+        float: none;
+    }
+
+    aside.sidebar{display:none;}
+    article h1.blog-title{font-size:3em;}
+    article h2.blog-title{font-size:2.5em;}
+    article img.attachment-post-thumbnail{
+        display:none;
+    }
+    article h1.blog-title,
+    article h2.blog-title{
+        display:block;
+        position:relative;
+    }
+    ul.books li{float:none;margin:0 auto !important;margin-bottom:20px !important;}
+}
