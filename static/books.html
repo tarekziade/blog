@@ -1,21 +1,27 @@
 {% extends "base.html" %}
 {% block title %}Books I wrote{% endblock %}
 {% block content %}
-        <section class="content blog">
-            <div class="constraint">
-
- <a href="http://www.amazon.com/exec/obidos/ASIN/184719494X/sharedlinks-20">
-  <img src="{{ SITEURL }}/theme/images/epp.jpg" alt="" width="170" height="200" class="right" />
- </a>
- 
- <a href="http://www.amazon.fr/exec/obidos/ASIN/2100508830/programmation-21">
-  <img src="{{ SITEURL }}/theme/images/pg.jpg" alt="" width="170" height="200" class="right" />
- </a>
- 
- <a href="http://www.amazon.fr/exec/obidos/ASIN/221212483X/programmation-21">
-   <img src="{{ SITEURL }}/theme/images/pp.jpg" alt="" width="170" height="200" class="right" />
- </a>
- </div>
+<section class="content blog">
+    <div class="constraint">
+        <h2 class="title">Books</h2>
+        <ul class="books">
+            <li>
+                <a target="_blank" href="http://www.amazon.com/exec/obidos/ASIN/184719494X/sharedlinks-20">
+                    <img src="{{ SITEURL }}/theme/images/epp.jpg">
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="http://www.amazon.fr/exec/obidos/ASIN/2100508830/programmation-21">
+                    <img src="{{ SITEURL }}/theme/images/pg.jpg">
+                </a>
+            </li>
+            <li class="last">
+                <a target="_blank" href="http://www.amazon.fr/exec/obidos/ASIN/221212483X/programmation-21">
+                    <img src="{{ SITEURL }}/theme/images/pp.jpg">
+                </a>
+            </li>
+        </ul>
+    </div>
 </section>
 {% endblock %}
 
