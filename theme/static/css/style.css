@@ -111,6 +111,11 @@ p.subtitle a{
         font-size: 13px;
     }
 
+    #header .nav a:hover {
+        text-decoration: underline;
+        color: rgb(233, 87, 63);
+    }
+
     .branding .avatar{
         background:url(https://twimg0-a.akamaihd.net/profile_images/2738488586/d63ef1f281c2e8bc2e99c196baaa576e.jpeg);
         display:block;
@@ -419,7 +424,7 @@ body{
         color: #9C9FA7;
         margin-bottom: 16px;
         font-family: Lucida Console,Monaco,Andale Mono,"MS Gothic",monospace;
-        font-size: 11px;
+        font-size: 14px;
         -moz-border-radius: 5px;
         -webkit-border-radius: 5px;
         -o-border-radius: 5px;
@@ -467,3 +472,32 @@ div.tag a {
  color: rgb(233, 87, 63);
  margin-right: 4px 
 }
+
+blockquote {
+ font-size: 1.8em;
+ margin-bottom: 10px;
+ font-style:italic;
+}
+
+ol, ul {
+  list-style-position:inside;
+  margin-bottom: 10px;
+
+}
+
+ol { 
+  list-style-type: upper-roman; 
+
+}
+
+div.note {
+  padding: 10px;
+  background-color: #efefef;
+  margin-bottom: 10px;
+}
+
+div.note p.admonition-title {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
