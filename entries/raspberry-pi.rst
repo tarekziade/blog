@@ -10,6 +10,10 @@ A Raspberry Pi Juke Box (How-to)
 
 .. note::
 
+   **I wrote an up-to date version at http://raspberry.io/projects/view/a-rapsberry-pi-juke-box-1**
+
+.. note::
+
    Follow-up on the hardware: http://blog.ziade.org/2012/07/04/my-raspberry-pi-juke-box-follow-up
 
 

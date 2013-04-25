@@ -13,6 +13,11 @@ My Raspberry Pi Juke Box (Follow up)
    :target: http://blog.ziade.org/rpi-lego.jpg
 
 
+
+.. note::
+
+   **I wrote an up to date version at http://raspberry.io/projects/view/a-rapsberry-pi-juke-box-1**
+
 Just a follow-up on my `Raspberry Pi Juke Box project <http://blog.ziade.org/2012/07/01/a-raspberry-pi-juke-box-how-to/>`_.
 
 I have received all the peripherals by mail today so I could finish the
