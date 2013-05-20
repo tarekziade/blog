@@ -92,7 +92,7 @@ Let's use the circusctl shell while the system is running::
     circusctl 0.7.1
     circusd-stats: active
     circushttpd: active
-    webworker: active
+    webapp: active
     (circusctl)
 
 You get into an interactive shell. Type **help** to get all commands::
@@ -113,11 +113,11 @@ You get into an interactive shell. Type **help** to get all commands::
 Let's try basic things. Let's list the web workers processes and add a
 new one::
 
-    (circusctl) list webworker
+    (circusctl) list webapp
     13712,13713,13714
-    (circusctl) incr webworker
+    (circusctl) incr webapp
     4
-    (circusctl) list webworker
+    (circusctl) list webapp
     13712,13713,13714,13973
 
 
