@@ -86,7 +86,7 @@ You can also visit http://localhost:8080/ and enjoy the Circus web dashboard.
 Interaction
 -----------
 
-Let's use the circusctl shell why the system is running::
+Let's use the circusctl shell while the system is running::
 
     $ bin/circusctl
     circusctl 0.7.1
