@@ -19,7 +19,7 @@ amplified speaker I could drive from the home wifi instead of putting $300 in a
 Bose Soundlink or a Jawbone JAMBOX and get limited features compared with what
 I can build with a Raspberry.
 
-So I build a Ghetto blaster with a suit case.
+So I built a Ghetto blaster with a suit case.
 
 Ghetto blasters are one of the coolest thing ever. It's the perfect device
 to enjoy music outside - and it's so 80s.. :)
