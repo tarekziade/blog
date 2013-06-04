@@ -74,7 +74,7 @@ The features I want are pretty simple:
   a specific group of people.
 
 Of course, this raises some issues, like the fact that
-it could be used by commercial companies to do send some
+it could be used by commercial companies to send some
 unsollicited e-mails like recruiting e-mails, or
 simple spams. But people are already used to deal with
 this as soon as they have a public life.
