@@ -32,7 +32,7 @@ the right people through your network.
 
 For the second question --reaching out women-- I've learnt too
 late that I should've worked with the PyLadies on this, or
-even the Ada initiative, and certainly not the PSF.
+even the Ada initiative.
 
 But this is too much work. I just want to reach out the right
 **people** without having to go through a lot of intermediates.
