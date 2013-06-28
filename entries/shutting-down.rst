@@ -22,7 +22,11 @@ I moved to `NewsBlur <https://www.newsblur.com/>`_
 instead of Google Reader - before Reader was planned to be stopped.
 
 I moved from Gmail to `fastmail.fm <http://fastmail.fm>`_. That was the
-hardest one because I was on Gmail since 2004.
+hardest one because I was on Gmail since 2004. Fastmail, it turns
+out, has its servers in the U.S. too, but I guess having a
+separate service for my e-mails is breaking the all-things-at-google
+scheme. I am also trying to have my network use PGP when we exchange
+e-mails, so they're stored encrypted on those servers I don't own.
 
 Last, I moved from the Google search engine to DuckDuckGo, then
 to `StartPage <https://startpage.com/>`_. The latter gives better
@@ -54,8 +58,8 @@ are displayed besides your e-mail when you use GMail.
 So while there's an incentive to let you share data thinking
 it's not public, shit happens. So I don't see the point of pushing
 anything non-public in those silos. And it turns out that I am mostly
-a consumer so I am fine using apps like G+ with no account -- and if possible
-via `Tor <https://www.torproject.org/>`_.
+a consumer. Too bad G+ is a private club and you can't see its
+content if you don't have a Google account.
 
 If I have cool stuff to talk about, I can blog and probably
 do a better job in one blog post than in numerous G+ or FB posts.
