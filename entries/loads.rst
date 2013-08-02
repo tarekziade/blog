@@ -1,7 +1,7 @@
 Loads 0.1 released
 ##################
 
-:date: 2013-08-13 15:19
+:date: 2013-08-02 15:19
 :tags: python, mozilla
 :category: mozilla
 :author: Tarek Ziade
