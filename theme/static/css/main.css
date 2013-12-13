@@ -4,6 +4,10 @@ section, article, header, footer, nav, aside, hgroup{
     zoom:1;
 }
 
+article p {
+  text-align: justify;
+}
+
 @font-face {
     font-family: 'MenschRegular';
     src: url('theme/fonts/mensch-wf.eot');

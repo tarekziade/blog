@@ -1,11 +1,10 @@
 Presence on Firefox OS
 ######################
 
-:date: 2013-12-11 09:42
+:date: 2013-12-13 09:42
 :tags: python, mozilla
 :category: mozilla
 :author: Tarek Ziade
-:status: draft
 
 .. note::
 
