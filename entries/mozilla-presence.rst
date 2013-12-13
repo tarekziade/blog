@@ -19,7 +19,7 @@ for the future of the web.
 
 The discussion was initiated with this simple question: if you are not currently
 running social application *Foo* on your phone, how hard would it be for your friends
-to know if you're available and to send you an instant notification to reach you out ?
+to know if you're available and to send you an instant notification to reach you ?
 
 
 A few definitions
@@ -67,7 +67,7 @@ Presence on iOS
 
 In iOS >= 7.x, applications that want to provide a presence feature
 can keep a socket opened in the background even if the application
-is not running anymore in the foreground.
+is not running any more in the foreground.
 
 The feature is called `setKeepAliveTimeout <https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIApplication_Class/Reference/Reference.html#//apple_ref/occ/instm/UIApplication/setKeepAliveTimeout:handler:>`_ and will give the app the ability to register
 a handler that will be called periodically to check on the socket connection.
@@ -101,19 +101,19 @@ if TCP/IP is used it can be hard to have a reliable service. That's also
 what currently happens in Firefox OS, you can't bet that your application
 will run forever in the background.
 
-Google also provides a "Google Cloud Messaging" `(GCM) service <http://developer.android.com/google/gcm/index.html>`_
-That provides similar features than `Simple Push <https://wiki.mozilla.org/WebAPI/SimplePush>`_,
+Google also provides a "Google Cloud Messaging" `(GCM) service <http://developer.android.com/google/gcm/index.html>`_.
+That provides similar features to `Simple Push <https://wiki.mozilla.org/WebAPI/SimplePush>`_,
 to push notifications to users.
 
-There's also a new feature called `GCM Cloud Connection Server - (CSS) <http://developer.android.com/google/gcm/ccs.html>`_
-- that allows applications to communicate with the device via XMPP and on the client side "Intent Services".
-The app and the devices interact with CSS, which relays the messages back and forth.
+There's also a new feature called `GCM Cloud Connection Server - (CCS) <http://developer.android.com/google/gcm/ccs.html>`_
+that allows applications to communicate with the device via XMPP and with client side "Intent Services".
+The app and the devices interact with CCS, which relays the messages back and forth.
 
-There's a full example on their documentation, of a Python server interacting with the GCM service
+There's a full example on their documentation of a Python server interacting with the GCM service
 to interact with users.
 
 What's interesting is that the device keeps a *single* connection to a Google
-service, that relays calls from applications servers. So instead of keeping
+service, that relays calls from application servers. So instead of keeping
 one connection in every application, the phone shares the same pipe.
 
 It's still up to the app to leverage this service to keep track of connected
@@ -130,7 +130,7 @@ And Firefox OS ?
 
 If you were to build a chat application today on Firefox OS, you would
 need to keep your own connection open on your own server. Once your application
-is sent to the background, you cannot really control what happens when
+is sent in the background, you cannot really control what happens when
 the system decides to shut it down to free some resources.
 
 In other words, you're blacking out and the application service will
@@ -142,18 +142,18 @@ The goal of the **Presence project** is to improve this and provide
 a better solution for app developers.
 
 At first, we thought about running our own presence service, be it based
-on `ejabberd <http://www.ejabberd.im/>`_ or wathever XMPP server out there. Since
+on `ejabberd <http://www.ejabberd.im/>`_ or whatever XMPP server out there. Since
 we're hackers, we quickly dived into all the challenges of scaling such a service for
 Firefox OS users. Making a presence service scaling for millions of users is not
 a small task - but that's really interesting.
 
-The problem though, is the incentive for app publisher to use our own
+The problem though, is the incentive for an app publisher to use our own
 presence service. Why whould they do this ? They all already solved presence
 in their applications, why would they use our own thing ? They would rather
 want us to provide a better story for background applications - and keep their
 client-side interacting with their own servers.
 
-But we felt that we could provide a better service for our users experience,
+But we felt that we could provide a better service for our user experience,
 something that is less battery draining, and that puts back the user in the
 center of the picture.
 
