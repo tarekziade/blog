@@ -47,7 +47,7 @@ aux hommes et aux femmes, actives ou inactives) ? Alors restons
 sur l'idée que cette action part d'une bonne intention: protéger
 la marque "Fait Main Pas à Pas".
 
-Cette mise en deumeure se base sur le fait que ce nom a été déposé
+Cette mise en demeure se base sur le fait que ce nom a été déposé
 à l'INPI en 1992 - et effectivement lorsque l'on regarde la
 `base de donnée de l'INPI <http://bases-marques.inpi.fr>`_ on retrouve
 ce dépôt, parmi d'autres:
@@ -89,7 +89,7 @@ Voici le texte que nous allons ajouter sur une page de Fait Main
 à compter du 15 janvier::
 
 
-    Suite à une mise en deumeure du groupe DIPA/BURDA, notre magazine
+    Suite à une mise en demeure du groupe DIPA/BURDA, notre magazine
     s'engage à ne jamais écrire sur ces sujets:
 
     - mode
