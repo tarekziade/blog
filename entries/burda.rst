@@ -18,7 +18,7 @@ d'avocats que je reproduis ci-dessous:
 
 Burda est une boîte d'édition d'un gros groupe allemand, qui édite entres
 autres deux magazines: "Fait Main Tricot" et "Fait Main pas à pas"
-- le magazine "des femmes actives".
+- le magazine "des femmes créatives".
 
 En visitant le site web ici: http://www.burda.fr on constate qu'il n'y a pas
 vraiment de contenu en ligne, juste le sommaire des magazines papiers.
@@ -44,7 +44,7 @@ quand on tape "Fait Main".
 Mais c'est juste une opinion - peut-être que les responsables
 du magazine de tricot sont vraiment persuadés que leurs lectrices
 vont confondre leur magazine préféré et le mien (qui s'adresse
-aux hommes et aux femmes, actives ou inactives) ? Alors restons
+aux hommes et aux femmes, créatives ou pas) ? Alors restons
 sur l'idée que cette action part d'une bonne intention: protéger
 la marque "Fait Main Pas à Pas".
 
