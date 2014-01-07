@@ -71,7 +71,7 @@ nom qui commence par "Fait Main".
 Quelle chance j'ai de gagner devant un juge ?
 Je n'en ai aucune idée, je pense que ca dépend de beaucoup de facteurs.
 Selon moi ce n'est pas difficile de prouver qu'il n'y a pas vraiment de points
-communs entre les deux projets, mais si le juge s'appuie surtout
+communs entre les deux projets, mais si le juge s'appuit surtout
 sur le dépôt de marque à l'INPI...
 
 Je pourrais prendre un avocat et me battre,
@@ -98,8 +98,8 @@ Voici le texte que nous allons ajouter sur une page de Fait Main
     - tricot
     - crochet
 
-    A la seule exception des wearable devices: les eventuels projets
-    éléctroniques embarqués dans des tissus, où des points de couture sont
+    A la seule exception des wearable devices: les éventuels projets
+    électroniques embarqués dans des tissus, où des points de couture sont
     indispensables.
 
     Le site possède maintenant en outre dans sa section lien, un lien vers http://burda.fr
@@ -110,7 +110,7 @@ dans l'autre sens. Donc ils peuvent potentiellement revenir à la charge
 dans 6 mois si Mr Burda décide de faire un magazine qui parle de wearable
 device par exemple.
 
-Mais en attendant j'en aurait un peu plus appris sur le sujet et je serais
+Mais en attendant j'en aurais un peu plus appris sur le sujet et je serais
 un peu plus prêt à les affronter.
 
 Mon conseil si vous lancez un projet de publication ambitieux:
@@ -120,7 +120,7 @@ Mon conseil si vous lancez un projet de publication ambitieux:
 
 
 Le plus drôle dans cette histoire est que si les gens de Burda m'avaient
-contacté directement et fait part de leur craintes - ont aurait certainement
+contacté directement et fait part de leur craintes - on aurait certainement
 pu en discuter de manière constructive et intelligente.
 
 Mais là, recevoir une mise en demeure directement, ca soigne... Ca m'a renforcé
