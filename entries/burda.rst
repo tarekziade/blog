@@ -1,8 +1,9 @@
-Mise en deumeure de BURDA
-#########################
+Mise en demeure de BURDA
+########################
 
 :date: 2014-01-07 08:00
 :author: Tarek Ziade
+:slug: mise-en-deumeure-de-burda
 
 .. note::
 
