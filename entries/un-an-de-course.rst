@@ -37,7 +37,7 @@ plus précises grâce à la collecte du rythme cardique.
 Impact sur la santé et l'alimentation
 -------------------------------------
 
-Je suis passé d'un rythme cardique au repos (au réveil) de 70 pulsations à 53. Les
+Je suis passé d'un rythme cardique au repos (au réveil) de 70 pulsations à 46. Les
 petits mal de dos chroniques après une journée penché sur le clavier ont disparus.
 Mon état général est passé de moyennement motivé pour me lever le matin, crevé le soir
 à une bonne pêche toute la journée.
