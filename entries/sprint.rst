@@ -6,8 +6,8 @@ French Services Hackaton #1
 :category: mozilla
 :author: Tarek Ziade
 
-The Mozilla Cloud Services team is quite big these days - we're around 40
-people I think. And it just got a little bit reorganized into smaller subteams.
+The Mozilla Cloud Services team just got a little bit reorganized
+and I am now managing a new subteam.
 
 I am very happy about the new subteam I am part of: Alexis, Rémy and myself
 are the **French Cloud Services** team. We're still working on projects with
