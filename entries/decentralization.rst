@@ -6,9 +6,9 @@ Data decentralization & Mozilla
 :category: mozilla
 :author: Tarek Ziade
 
-The fine folks at the Paris took the opportunity of our presence to organize
-a "Meet the Cloud Services French Team" event yesterday night. Among all the
-discussions we had, one topic came back several times during the evening.
+The fine folks at the Mozilla Paris office took the opportunity of our presence
+(Alexis/Remy/myself) to organize a "Meet the Cloud Services French Team" event yesterday
+night. Among all the discussions we had, one topic came back several times during the evening.
 
 **How do we let people using our services, host their data anywhere they want**
 
