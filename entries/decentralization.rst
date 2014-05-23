@@ -49,5 +49,5 @@ Looking forward to see what we'll do in this area.
 Tristan Nitot, who came by during the meeting, has sparkled this discussion and
 is planning to organize recurrent meetings on the topic at the Paris community space
 - helped by Claire and Axel. They are also zillions of other cool stuff happening
-at the Paris this summer. Like, several meetings per week. I'll try to update
+at the Paris space this summer. Like, several meetings per week. I'll try to update
 this blog post whenever I find a good link to the events list.
