@@ -1,53 +1,33 @@
-Data decentralization & Mozilla
-###############################
+Decentralization Mailing List
+#############################
 
-:date: 2014-05-23 17:00
-:tags: python, mozilla
+:date: 2014-06-27 16:20
+:tags: mozilla
 :category: mozilla
 :author: Tarek Ziade
 
-The fine folks at the Mozilla Paris office took the opportunity of our presence
-(Alexis/Remy/myself) to organize a "Meet the Cloud Services French Team" event yesterday
-night. Among all the discussions we had, one topic came back several times during the evening.
+This is long time due !
 
-**How do we let people using our services, host their data anywhere they want**
+Following up with my `previous blog post <http://blog.ziade.org/2014/05/23/data-decentralization-amp-mozilla>`_
+I have started a Decentralization Mailing list.
 
-I built the first Python version of the Firefox Sync server, so I had an answer
-already - **you can tweak your browser configuration to point to your own
-server**.
+The goal of this mailing list is to discuss technologies related to data decentralization
+in Mozilla projects - and in particular in the ones we work at in the Cloud Services team
+(but it can go beyond of course)
 
-But self-hosting your Sync server requires quite some knowledge.
-I provided a Makefile to build the server back in the days, but the amount
-of work to set everything up was quite important.
+A few topic examples that people brought up:
 
-And it got bigger with the new Sync version, because we've added dependencies
-to other services for authentication purposes. Our overall architecture is
-getting better but self-hosting Firefox Sync is getting harder.
+#. Could remoteStorage be used with Firefox Account to build Firefox OS apps where people can store their own data ?
+#. Can Firefox Sync use a remoteStorage backend ?
+#. Why can't I run a simple "apt-get install firefox-sync" and host my own server ?
+#. What about peer-to-peer ? How does that fit with the services we provide ?
 
-Alexis is quite excited about trying to improve this situation, and suggested
-building debian packages to make the process easy as in "apt-get install firefox-sync".
 
-There were also discussion around `remoteStorage <http://remotestorage.io/>`_
-and the more I look at it, the more I feel like a product like Firefox Sync
-could rely on a remoteStorage server. That would make self-hosting straightforward.
+The list is at : https://lists.mozilla.org/listinfo/dev-decentralization
 
-The only thing that's unclear to me yet is if remoteStorage is heavily tied
-to OAuth or if we can plug our own authentication process.
-(e.g. Firefox Account tokens)
+I will wait a week or so to launch topics there, but if you are interested
+in this topic, if you want to lurk or to launch an idea - please join.
 
-Another problem I see: it's easy to build client-side applications that directly
-interacts with a remoteStorage, but sometimes you do have to provide server-side
-APIs. In that case, I am wondering how convenient it would be for a web service
-to interact with a 3rd party remoteStorage server on behalf of a user.
-If both parts are different entities, it's a recipe for technical nightmares.
+On my side, the first topic I will probably talk about in this ML
+is #1.
 
-It feels in any case that those topics are going to be very important for
-the web in the upcoming months, and that Mozilla needs to play an important role there.
-
-Looking forward to see what we'll do in this area.
-
-Tristan Nitot, who came by during the meeting, has sparkled this discussion and
-is planning to organize recurrent meetings on the topic at the Paris community space
-- helped by Claire and Axel. They are also zillions of other cool stuff happening
-at the Paris space this summer. Like, several meetings per week. I'll try to update
-this blog post whenever I find a good link to the events list.
