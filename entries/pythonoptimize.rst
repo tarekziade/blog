@@ -70,10 +70,10 @@ So yeah, **even if you don't use yourself those options, it's good practice
 to make sure that your python code is tested with all possible values for
 PYTHONOPTIMIZE**.
 
-It's easy enough, just run your test with **-O** and **-OO** and without,
+It's easy enough, just run your tests with **-O** and **-OO** and without,
 and make sure your code does not depend on doctsrings or assertions.
 
 If you have to depend on one of them, make sure your code gracefully handles
-the optimize modes or raises an early error explaining with you are
+the optimize modes or raises an early error explaining why you are
 not compatible with them.
 
