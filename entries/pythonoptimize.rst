@@ -77,3 +77,5 @@ If you have to depend on one of them, make sure your code gracefully handles
 the optimize modes or raises an early error explaining why you are
 not compatible with them.
 
+Thanks to Brett Cannon, Michael Foord and others for their feedback on Twitter on this.
+
