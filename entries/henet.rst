@@ -15,9 +15,9 @@ at : http://acr-dijon.org. Nothing's special about it, except that I am not
 the one feeding it. The content is added by people from the club that have zero
 knowledge about softwares, let alone stuff like vim or command line tools.
 
-I set up a github-based flow for them, where they would add content through the
+I set up a github-based flow for them, where they add content through the
 github UI and its minimal reStructuredText preview feature - and then a few
-of my crons would update the website on the server I host.
+of my crons update the website on the server I host.
 For images and other media, they are uploading them via FTP using FireSSH in Firefox.
 
 For the comments, I've switched from Disqus to `ISSO <https://posativ.org/isso/>`_
@@ -29,13 +29,12 @@ reStructuredText syntax training, and things are more of less working now.
 
 The system has a few caveats though:
 
-- it's dependant on Github. I'd rather have everything hosted on my server.
+- it's dependent on Github. I'd rather have everything hosted on my server.
 - the github restTRucturedText preview will not display syntax errors and warnings
   and very often, articles get broken
 - the resulting reST is ugly, and it's a bit hard to force my editors to be stricter
   about details like empty lines, not using tabs etc.
-- adding folders or organizing articles in the Pelican content directory freaks out
-  my editors.
+- adding folders or organizing articles from Github is a pain
 - editing the metadata tags is prone to many mistakes
 
 So I've decided to build my own web editing tool with the following features:
@@ -76,10 +75,10 @@ Content browsing
 ================
 
 Content browsing is pretty straightforward: my admin tool let you browse
-the Pelican content directory and lists all articles, organized by categories.
+the Pelican *content* directory and lists all articles, organized by categories.
 
-In our case, each category has a top directory in content. The browser
-parses the articles using my parser and display batched lists.
+In our case, each category has a top directory in *content*. The browser
+parses the articles using my parser and displays paginated lists.
 
 I had to add a cache system for the parser, because one of the directory
 contains over 1000 articles -- and browsing was kind of slow :)
@@ -96,7 +95,7 @@ as you are typing it. And it includes warnings !
 
 Check it out: http://rst.ninjs.org/
 
-I've stripped it from what I needed and included it in my tool.
+I've stripped it and kept what I needed, and included it in my app.
 
 .. image:: http://ziade.org/henet.png
 
@@ -105,7 +104,9 @@ a bit of documentation, and I will start to train my club friends on it.
 
 The next features I'd like to add are:
 
-- comments management
+- comments management, to replace Isso (working on it now)
+- smart Pelican builds. e.g. if a comment is added I don't want to rebuild the whole
+  blog (~1500 articles)
 - media management
 - spell checker
 
