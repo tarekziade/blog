@@ -65,7 +65,7 @@ That's the `Go Faster <https://wiki.mozilla.org/Firefox/Go_Faster>`_ umbrella pr
 
 We're going to use Kinto for:
 
-- the **OneCRL** client in Firefox, that is syncing the list of certificate revokations in
+- the **OneCRL** client in Firefox, that is syncing the list of certificate revocations in
   Firefox. The plan is to offer the security team the ability to deploy a change
   to all our users as fast as possible.
 
@@ -86,18 +86,27 @@ on-the-fly as diffs, he started to work with my team, Julien and Franziskus
 on a signing protocol that will allow the Kinto client to verify that the data
 that was sent by the server was not tampered with.
 
-That works has started a few months ago and the work week was a perfect time
-to give it a boost. Julien started a micro-service called **autograph** that
-will let a Kinto administrator sign the data before it's pushed into Kinto.
+That work started a few months ago and the work week was a perfect time
+to give it a boost.
+
+On the server-side, the signing is done with a micro-service Julien started,
+called **autograph** that will let a Kinto administrator sign the data before
+it's pushed into Kinto.
 
 See https://github.com/mozilla-services/autograph
 
-Kinto is pretty passive about this, as it just stores signed hashes of collections
-and let any client get them back.
+Kinto is interacting with the signer through a specialized plugin, that triggers
+the signing whenever some data is changed into Kinto, and that makes
+sure the data is published to clients once properly signed.
 
-The Kinto client can grab that signature and ask Firefox to verify it before applying
-data changes. The verification logic uses a custom PKI that Mark and Franziskus
-and building on top of NSS in the client.
+See https://github.com/mozilla-services/kinto-signer
+
+The storage itself is pretty passive about this, as it just stores signed
+hashes of collections and let any client get them back.
+
+The Kinto client can grab that signature and ask Firefox to verify it before
+applying data changes. The verification logic uses a custom PKI that Mark and
+Franziskus and building on top of NSS in the client.
 
 Obviously, we should do this for all the data Kinto ever sends to Firefox,
 so going forward, all our Kinto deployments will integrate by default signatures
