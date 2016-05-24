@@ -155,6 +155,11 @@ snippets I found here and there, and the result:
 
 `The gist <https://gist.github.com/tarekziade/efa320ee463d9675db6f55f2ffaa7f86>`_
 
+.. raw:: html
+
+   <script src="https://gist.github.com/tarekziade/efa320ee463d9675db6f55f2ffaa7f86.js"></script>
+
+
 **And the winnner is : RendezVous and sha256**
 
 Of course, that entirely depends on how many servers & users you have.
