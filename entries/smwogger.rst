@@ -256,7 +256,7 @@ body and extract the value. If the value is not found and **default** is
 provided, the variable will take that value.
 
 Once the variable is set, it will be reused by Smwogger for subsequent
-operations, to replace variables in path templates, or to fill response data.
+operations, to replace variables in path templates.
 
 The path formatting is done automatically. Smwogger will look first at
 variables defined in operations, then at the path sections.
@@ -265,7 +265,7 @@ variables defined in operations, then at the path sections.
 Conclusion
 ==========
 
-None for know. This is an ongoing experiment. But happy to get your feedback
+None for now. This is an ongoing experiment. But happy to get your feedback
 on github!
 
 
