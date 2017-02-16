@@ -69,7 +69,7 @@ Molotov scripts are coroutines to perform HTTP calls, and spawning
 a lot of them in a few processes can generate a fair amount of load from a
 single box.
 
-Thanks to Richard, Chris, Mike and others - my Mozilla QA teammates,
+Thanks to Richard, Chris, Matthew and others - my Mozilla QA teammates,
 I had some great feedback to create the tool, and I think it's almost ready
 for being used by more folks - it stills need to mature, and the docs
 to improve but the design is settled, and it works well already.
