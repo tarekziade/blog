@@ -71,9 +71,13 @@ single box.
 
 Thanks to Richard, Chris, Mike and others - my Mozilla QA teammates,
 I had some great feedback to create the tool, and I think it's almost ready
-for being used by more folks - it stills need to mature, but the design is
-settled, and it works well already.
+for being used by more folks - it stills need to mature, and the docs
+to improve but the design is settled, and it works well already.
 
+I've pushed a release at PyPI and plan to push a first stable final release
+this month once the test coverage is looking better & the docs are polished.
+
+But I think it's ready for a bit of community feedback.
 That's why I am blogging about it today -- if you want to try it, help building
 it here are a few links:
 
