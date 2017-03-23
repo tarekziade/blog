@@ -1,13 +1,13 @@
 Load Testing at Mozilla
 #######################
 
-:date: 2017-03-17
+:date: 2017-03-23
 :tags: python, mozilla
 :category: mozilla
 :author: Tarek Ziade
 
 After a stabilization phase, I am happy to announce that
-`Motolov 1.0 <http://molotov.readthedocs.io/>`_ has been
+`Molotov 1.0 <http://molotov.readthedocs.io/>`_ has been
 released!
 
 .. image:: http://molotov.readthedocs.io/en/latest/_static/logo.png
