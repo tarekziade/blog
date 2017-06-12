@@ -73,10 +73,10 @@ most one Firefox browser per Molotov worker. We want to have a browser instance
 attached per session instance when the test is running.
 
 The **setup_session** and **teardown_session** fixtures are the right place
-to start and stop a browser via Arsenic. To make the setup even easier,
-I've created a small extension for Molotov called Arsenic, that will
-take care of running a Firefox browser and attaching it to the worker
-session.
+to start and stop a browser via Arsenic. To make the setup even easier, I've
+created a small extension for Molotov called `Molosonic
+<https://github.com/tarekziade/molosonic>`_, that will take care of running a
+Firefox browser and attaching it to the worker session.
 
 In the example below, a browser is created every time a worker starts
 a new session::
