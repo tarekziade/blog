@@ -55,9 +55,9 @@ that protocol would be able to drive all kind of browsers. In Firefox we have a
 similar feature with Marionette, which is a TCP server you can use to driver
 Firefox. But eventually, Firefox will implement WebDriver.
 
-Geckodriver is a small proxy we can use until Firefox has its WebDriver
-implementation. Geckodriver is an HTTP server that translates WebDriver calls
-into Marionette calls, and also deals with starting and stopping Firefox.
+Geckodriver is Mozilla's WebDriver implementation, and can be used to
+proxy calls to Firefox. Geckodriver is an HTTP server that translates WebDriver
+calls into Marionette calls, and also deals with starting and stopping Firefox.
 
 And Arsenic is the async WebDriver client Jonas started. It's already working
 great. The project is here on Github: https://github.com/HDE/arsenic
