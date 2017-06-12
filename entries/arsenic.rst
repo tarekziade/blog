@@ -60,8 +60,7 @@ implementation. Geckodriver is an HTTP server that translates WebDriver calls
 into Marionette calls, and also deals with starting and stopping Firefox.
 
 And Arsenic is the async WebDriver client Jonas started. It's already working
-great. Arsenic can be used with different event loop, like Twisted native loop,
-or asyncio. The project is here on Github: https://github.com/HDE/arsenic
+great. The project is here on Github: https://github.com/HDE/arsenic
 
 
 Molotov + Arsenic == Molosonic
