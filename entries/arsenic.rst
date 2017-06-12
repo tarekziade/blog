@@ -22,7 +22,7 @@ Molotov is also handy to run integration tests. The same scenario used to load
 test a service can be used to simulate a few users on a service and make sure it
 behaves as expected.
 
-But the tool is able to only test HTTP(S) endpoints via aiohttp.Client, so if
+But the tool can only test HTTP(S) endpoints via aiohttp.Client, so if
 you want to run tests through a real browser, you need to use a tool like
 Selenium, or drive the browser directly via Marionette for example.
 
@@ -34,25 +34,25 @@ But the problem with Selenium Python libraries is that they are all written (as
 far as I know) in a synchronous fashion. They can be used in Molotov of course,
 but each call would block the loop and defeat concurrency.
 
-The other limitation is that one instance of a browser cannot really be used by
+The other limitation is that one instance of a browser cannot be used by
 several concurrent users. For instance in Firefox, even if Marionette is
 internally built in an async way, if two concurrent scripts are trying to change
-the active tab at the same time, that would break their respective scenario.
+the active tab at the same time, that would break their own scenario.
 
 Introducing Arsenic
 -------------------
 
 By the time I was thinking about building an async library to drive browsers, I
-had an interesting conversation with Jonas whom I met at Pycon Malaysia last
+had an interesting conversation with Jonas Obrist whom I had met at Pycon Malaysia last
 year. He was in the process of writing an asynchronous Selenium client for his
-own needs. We ended up agreeing that it would be great to collaborate on an
+needs. We ended up agreeing that it would be great to collaborate on an
 async library that would work against the new `WebDriver
 <https://www.w3.org/TR/webdriver/>`_ protocol, which defines HTTP endpoints a
 browser can serve.
 
-WebDriver is going to be implemented in all browsers and a library that'd use
+WebDriver is going to be implemented in all browsers, and a library that'd use
 that protocol would be able to drive all kind of browsers. In Firefox we have a
-similar feature with Marionnette, which is a TCP server you can use to driver
+similar feature with Marionette, which is a TCP server you can use to driver
 Firefox. But eventually, Firefox will implement WebDriver.
 
 Geckodriver is a small proxy we can use until Firefox has its WebDriver
@@ -66,8 +66,8 @@ great. The project is here on Github: https://github.com/HDE/arsenic
 Molotov + Arsenic == Molosonic
 ------------------------------
 
-In order to use Arsenic with Molotov, I just need to pass along the event loop
-that's used in the load testing tool, and also make sure that it runs at the
+To use Arsenic with Molotov, I just need to pass along the event loop
+that's utilized in the load testing tool, and also make sure that it runs at the
 most one Firefox browser per Molotov worker. We want to have a browser instance
 attached per session instance when the test is running.
 
@@ -101,13 +101,13 @@ That's all it takes to use a browser in Molotov in an asynchronous
 way, thanks to Arsenic. From there, driving a test that simulates
 several users hitting a webpage and interacting through it requires
 some synchronization subtleties I will demonstrate in a tutorial
-I am still writing.
+I am still working on.
 
-All these projects are still very new and not really ready for
+All these projects are still very new and not ready for
 prime time, but you can still check out Arsenic's docs at
 http://arsenic.readthedocs.io
 
 Beyond Molotov use cases, Arsenic is a very exciting project
-if you need a way to drive browser in an async program. And
-async programming is tomorrow's stand in Python.
+if you need a way to drive browsers in an async program. And
+async programming is tomorrow's standard in Python.
 
