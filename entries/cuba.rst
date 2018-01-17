@@ -40,7 +40,7 @@ summer, with people gathering around Pokemon Arenas, that’s basically it.
 
 In most countries I’ve visited, we take internet for granted, and that’s been
 true for many years. We’ve dumped a big chunk of our memory back into to
-google/duckduckgo/quant/xxx because it’s easier to look back for a piece of
+google/duckduckgo/qwant/xxx because it’s easier to look back for a piece of
 information rather than remembering it.  We all have stories of finding back our own blog
 posts on the internet when looking for an answer.
 
