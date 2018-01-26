@@ -14,7 +14,7 @@ I'd give a summary of where we're at in the project and what's next.
 .. image:: http://ziade.org/team-selfie.jpg
 
 If you are not familiar with Kinto, it's an HTTP API that'll let you store
-(not so) arbitrary JSON content. Data is organized in *collections*, which are
+(not so) arbitrary JSON content. Data are organized in *collections*, which are
 basically a list of timestamped records. As a client, you can query Kinto
 to get records filtered by dates or other fields. Kinto also provides neat
 features like a diff-based API to grab only the newest data, like how you
@@ -80,9 +80,9 @@ We're going to use Kinto for:
 OneCRL
 ------
 
-Mark is driving the development of the client on behalf of the Firefox Security
+Mark Goodwin is driving the development of the client on behalf of the Firefox Security
 Team, and besides the obvious benefit of getting certificate revocations changes
-on-the-fly as diffs, he started to work with my team, Julien and Franziskus
+on-the-fly as diffs, he started to work with my team, Julien Vehent and Franziskus Kiefer
 on a signing protocol that will allow the Kinto client to verify that the data
 that was sent by the server was not tampered with.
 
@@ -99,14 +99,14 @@ Kinto is interacting with the signer through a specialized plugin, that triggers
 the signing whenever some data is changed into Kinto, and that makes
 sure the data is published to clients once properly signed.
 
-See https://github.com/mozilla-services/kinto-signer
+See https://github.com/mozilla-services/kinto-signer
 
 The storage itself is pretty passive about this, as it just stores signed
 hashes of collections and let any client get them back.
 
 The Kinto client can grab that signature and ask Firefox to verify it before
 applying data changes. The verification logic uses a custom PKI that Mark and
-Franziskus and building on top of NSS in the client.
+Franziskus are building on top of NSS in Firefox.
 
 Obviously, we should do this for all the data Kinto ever sends to Firefox,
 so going forward, all our Kinto deployments will integrate by default signatures
@@ -154,7 +154,7 @@ be maintained and evolve separately.
 Fennec Assets
 -------------
 
-Sebastian, from the Fennec team, has been working on the Fennec client
+Sebastian Kaspari, from the Fennec team, has been working on the Fennec client
 to sync a list of assets into Kinto. The goal is to reduce the size of the Android
 package, and download those extra files in the background.
 
@@ -166,11 +166,10 @@ write the class for) and their metadata in a Kinto collection.
 
 See https://github.com/Kinto/kinto-attachment/
 
-
 From a client point of view, what you get is a MANIFEST you can browse
 and sync locally, of what files are available on the server.
 
-Fennec is going to use this to let admins manage static file lists
+Fennec is going to use this to let admins manage static files lists
 that will be made available to the mobile browser, and downloaded
 if they really need them.
 
