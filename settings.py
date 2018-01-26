@@ -2,7 +2,7 @@
 AUTHOR = u'Tarek Ziadé'
 SITENAME = u"Fetchez le Python"
 SITESUBTITLE = AUTHOR
-SITEURL = 'http://blog.ziade.org'
+SITEURL = 'https://ziade.org'
 TIMEZONE = "Europe/Paris"
 GITHUB_URL = 'http://github.com/tarekziade/'
 DISQUS_SITENAME = "fetchezlepython"
@@ -16,16 +16,13 @@ FEED_RSS = 'feed'
 TAG_FEED_RSS  = 'tag/%s/feed'
 CATEGORY_FEED_RSS = 'category/%s/feed'
 MENUITEMS = [('Home', '/'),
-             ('Projects', '/projects.html'),
              ('Books', '/books.html'),
-             ('About Me', '/resume.html'),
-             ('Tools', '/tools.html')]
+             ('About Me', '/resume.html')]
 THEME = 'theme'
 
-STATIC_PAGES = {'/books.html': 'static/books.html',
-                '/resume.html': 'static/resume.html',
-                '/projects.html': 'static/projects.html',
-                '/tools.html': 'static/tools.html'}
+EXTRA_TEMPLATES_PATHS = ['static']
+TEMPLATE_PAGES = {'books.html': 'books.html',
+                  'resume.html': 'resume.html'}
 
 ARTICLE_URL = '{slug}/'
 ARTICLE_LANG_URL = '{slug}-{lang}/'
