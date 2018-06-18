@@ -29,7 +29,7 @@ That class was hooked as an NSPR layer to send notifications whenever something 
 sent or received on a socket, and was used to blink the small icon phones
 usually have to signal that something is being transferred.
 
-After the Firefox OS project discontinued in Gecko, that class was left in the
+After the Firefox OS project was discontinued in Gecko, that class was left in the
 Gecko tree but not used anymore, even though the option was still there.
 
 Since I needed a way to track all I/O activity (sockets and files), I have
