@@ -7,9 +7,9 @@ IOActivityMonitor in Gecko
 :author: Tarek Ziade
 
 This is a first blog post of a series on Gecko, since I am
-going a lot of C++ work in Firefox these days. My current focus
+doing a lot of C++ work in Firefox these days. My current focus
 is on adding tools in Firefox to try to detect what's going
-on when something go rogue in the browser and starts to drain
+on when something goes rogue in the browser and starts to drain
 your battery life.
 
 We have many ideas on how to do this at the developer/user level,
