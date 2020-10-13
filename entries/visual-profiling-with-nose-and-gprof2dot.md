@@ -71,9 +71,8 @@ automatically a statistics file and pass it to *gprof2dot*:
   
 This will print in the output a dot file, you can send to the dot
 program, using a pipe:   
-~~~~ {style="text-align:left;"}
-$ hotshot2dot /path/to/my/hotshot/file | dot -Tpng -o output.png
-~~~~
+
+  $ hotshot2dot /path/to/my/hotshot/file | dot -Tpng -o output.png
 
   
 You will get the visual result in *output.png*.

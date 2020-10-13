@@ -20,7 +20,7 @@ MENUITEMS = [('Home', '/'),
              ('About Me', '/resume.html')]
 THEME = 'theme'
 
-EXTRA_TEMPLATES_PATHS = ['static']
+THEME_TEMPLATES_OVERRIDES = ['static']
 TEMPLATE_PAGES = {'books.html': 'books.html',
                   'resume.html': 'resume.html'}
 
