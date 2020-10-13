@@ -158,10 +158,10 @@ to production, because some manual end-to-end tests might be required.
 
 By extension, **Continuous Deployement** (the other CD) means that the process
 of deploying new versions to production is also fully automated. I don't really
-make a technical distinction between the two CD, as I consider that automated
+make a technical distinction between the two CDs, as I consider that automated
 deployments, at least in a staging environment, should be part of the
 Continuous Delivery process. Deploying in **production** automatically is only
-possible if all end-to-end tests are full automated.
+possible if all end-to-end tests are fully automated.
 
 
 Level 3
