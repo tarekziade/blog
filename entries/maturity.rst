@@ -96,12 +96,12 @@ A generic pipeline can be::
       <--------------<------------------<--------------*---> OK!
 
 
-A PR is pushed in the DVCS, and that triggers a series of automated
-tests that will validate the change. Tests are unit, functional, performance,
-security, etc. The tests can also assess that the change did not lower the
-test coverage and when important, did not add too much complexity to the code base
-(you can use the `Cyclomatic complexity <https://en.wikipedia.org/wiki/Cyclomatic_complexity>`_
-metrics for example).
+A **Pull Request** (PR) is pushed in the DVCS, or in a review system, and that
+triggers a series of automated tests that will validate the change. Tests are
+unit, functional, performance, security, etc. The tests can also assess that
+the change did not lower the test coverage and when important, did not add too
+much complexity to the code base (you can use the `Cyclomatic complexity
+<https://en.wikipedia.org/wiki/Cyclomatic_complexity>`_ metrics for example).
 
 If the change passes that step, there's a manual code review done
 by another person, and there's a back and forth between the developer
@@ -122,7 +122,7 @@ the next step:
 
 The PR-Driven approach offers one advantage. In case there's an issue, you won't
 need to bisect the changes to find the offending patch. However, it's resource consuming
-and also requires to test against master once the PR is merged.
+and also requires to test once more against master once the PR is merged.
 
 The master-driven approach consists of cutting a release every day and testing it.
 All changes done in the past 24h will be tested **together**. It is less resource
@@ -198,4 +198,5 @@ a single, full project.
 Have you reached Level 3 in your organization ? Do  you have a process that's
 completely different ? What are your strategies to improve your processes ?
 
-
+Thanks to  Dave Hunt for some feedback on this article, and proof-reading
+my Frenglish  :)
