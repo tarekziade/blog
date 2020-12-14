@@ -407,8 +407,7 @@ body{
         margin-bottom: 1em;
     }
     ul li{
-        list-style:disc inside;
-        line-height:1.5em;
+        line-height:2em;
     }
 
     hr {
