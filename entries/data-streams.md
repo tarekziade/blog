@@ -56,8 +56,8 @@ lists or dicts, it's pretty accurate -- and our docs are simple mappings:
 from pympler import asizeof
 
 def get_size(ob):
-    """Returns size in MiB"""
-    return round(asizeof.asizeof(ob) / (1024 * 1024), 2)
+    """Returns size in bytes"""
+    return asizeof.asizeof(ob)
 ```
 
 Using that function, I've created a `MemQueue` class that will block any
@@ -79,11 +79,11 @@ class MemQueue(asyncio.Queue):
 
     def _get(self):
         item = self._queue.popleft()
-        self._current_memsize -= asizeof.asizeof(item)
+        self._current_memsize -= get_size(item)
         return item
 
     def _put(self, item):
-        self._current_memsize += asizeof.asizeof(item)
+        self._current_memsize += get_size(item)
         self._queue.append(item)
 
     def mem_full(self):
@@ -95,7 +95,7 @@ class MemQueue(asyncio.Queue):
         return self._current_memsize
 
     async def _wait_for_room(self, item):
-        item_size = asizeof.asizeof(item)
+        item_size = get_size(item)
         if self._current_memsize + item_size <= self.maxmemsize:
             return
         start = time.time()
@@ -115,7 +115,7 @@ That's it for the queue! Producers can use it to put new documents for the bulk 
 A simplified version of the producer:
 
 ```python
-MAX_QUEUE_SIZE = 100
+MAX_QUEUE_SIZE = 100 * 1024 * 1024
 
 queue = MemQueue(maxmemsize=MAX_QUEUE_SIZE)     # the queue can hold 100MB
 
@@ -131,9 +131,9 @@ once the consumer grabbed enough data so the queue is down to 100MB.
 A simplified version of the consumer:
 
 ```python
-
 MAX_OPS = 500   # 500 docs per call at the max
-MAX_REQUEST_SIZE = 5   # 5MB
+MAX_REQUEST_SIZE = 5 * 1024 * 1024   # 5MB
+
 
 async def consumer(queue):
     batch = []
