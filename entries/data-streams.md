@@ -68,19 +68,23 @@ import asyncio
 
 
 class MemQueue(asyncio.Queue):
-    def __init__(self, maxsize=0, maxmemsize=0):
+    def __init__(
+        self, maxsize=0, maxmemsize=0, refresh_interval=1.0, refresh_timeout=60
+    ):
         super().__init__(maxsize)
         self.maxmemsize = maxmemsize
+        self.refresh_interval = refresh_interval
         self._current_memsize = 0
+        self.refresh_timeout = refresh_timeout
 
     def _get(self):
         item = self._queue.popleft()
-        self._current_memsize -= get_size(item)
+        self._current_memsize -= asizeof.asizeof(item)
         return item
 
     def _put(self, item):
+        self._current_memsize += asizeof.asizeof(item)
         self._queue.append(item)
-        self._current_memsize += get_size(item)
 
     def mem_full(self):
         if self.maxmemsize == 0:
@@ -90,9 +94,18 @@ class MemQueue(asyncio.Queue):
     def qmemsize(self):
         return self._current_memsize
 
+    async def _wait_for_room(self, item):
+        item_size = asizeof.asizeof(item)
+        if self._current_memsize + item_size <= self.maxmemsize:
+            return
+        start = time.time()
+        while self._current_memsize + item_size >= self.maxmemsize:
+            if time.time() - start >= self.refresh_timeout:
+                raise asyncio.QueueFull()
+            await asyncio.sleep(self.refresh_interval)
+
     async def put(self, item):
-        while self.mem_full():
-            await asyncio.sleep(1.0)
+        await self._wait_for_room(item)
         return await super().put(item)
 ```
 
@@ -112,7 +125,7 @@ async def producer(queue):
     queue.put('END')
 ```
 
-`put` will block if `queue` has reached 100MB. The function will get unblocked 
+`put` will block if `queue` has reached 100MB. The function will get unblocked
 once the consumer grabbed enough data so the queue is down to 100MB.
 
 A simplified version of the consumer:
