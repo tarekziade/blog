@@ -4,6 +4,7 @@ Tags: python, elastic
 Category: elastic
 Author: Tarek Ziade
 
+**Updated with new class version**
 
 Ingesting a stream of data from a backend into Elasticsearch is pretty simple -- the service has this really
 nice [bulk api](https://www.elastic.co/guide/en/elasticsearch/reference/8.4/docs-bulk.html) where you
@@ -69,7 +70,7 @@ import asyncio
 
 class MemQueue(asyncio.Queue):
     def __init__(
-        self, maxsize=0, maxmemsize=0, refresh_interval=1.0, refresh_timeout=60
+        self, maxsize=0, maxmemsize=0, refresh_interval=1.0, refresh_timeout=120
     ):
         super().__init__(maxsize)
         self.maxmemsize = maxmemsize
@@ -78,12 +79,12 @@ class MemQueue(asyncio.Queue):
         self.refresh_timeout = refresh_timeout
 
     def _get(self):
-        item = self._queue.popleft()
-        self._current_memsize -= get_size(item)
-        return item
+        item_size, item = self._queue.popleft()
+        self._current_memsize -= item_size
+        return item_size, item
 
     def _put(self, item):
-        self._current_memsize += get_size(item)
+        self._current_memsize += item[0]
         self._queue.append(item)
 
     def mem_full(self):
@@ -97,20 +98,24 @@ class MemQueue(asyncio.Queue):
     async def _wait_for_room(self, item):
         item_size = get_size(item)
         if self._current_memsize + item_size <= self.maxmemsize:
-            return
+            return item_size
         start = time.time()
         while self._current_memsize + item_size >= self.maxmemsize:
             if time.time() - start >= self.refresh_timeout:
                 raise asyncio.QueueFull()
             await asyncio.sleep(self.refresh_interval)
+        return item_size
 
     async def put(self, item):
-        await self._wait_for_room(item)
-        return await super().put(item)
+        item_size = await self._wait_for_room(item)
+        return await super().put((item_size, item))
 ```
 
 
 That's it for the queue! Producers can use it to put new documents for the bulk consumer.
+Notice that when an item is added in the queue, its size is stored alongside the item,
+so the class does not have to call `asizeof` twice -- as this adds a bit of CPU overhead.
+
 
 A simplified version of the producer:
 
@@ -126,7 +131,8 @@ async def producer(queue):
 ```
 
 `put` will block if `queue` has reached 100MB. The function will get unblocked
-once the consumer grabbed enough data so the queue is down to 100MB.
+once the consumer grabbed enough data so the queue is down to 100MB or
+if it waits more than 120 seconds and then fail.
 
 A simplified version of the consumer:
 
@@ -139,14 +145,19 @@ async def consumer(queue):
     batch = []
     self.bulk_time = 0
     self.bulking = True
+    batch_size = 0
+
     while True:
-        operation = await queue.get()
+        op_size, operation = await queue.get()
         if operation == "END":
             break
         batch.extend(operation)
-        if len(batch) >= MAX_OPS or get_size(batch) > MAX_REQUEST_SIZE:
+        batch_size += op_size
+
+        if len(batch) >= MAX_OPS or batch_size > MAX_REQUEST_SIZE:
             await batch_bulk(batch)
             batch.clear()
+            batch_size = 0
 
         await asyncio.sleep(0)
 
@@ -157,6 +168,9 @@ async def consumer(queue):
 The consumer will pile up to 500 operations and sends them to Elasticsearch.
 If `batch` reaches 5MB before it has a chance to aggregate 500 operations, it
 will stop there and send it out.
+
+The loop uses the stored sizes returned by `queue.get` so we don't have to
+call `asizeof` again -- which reduces the CPU overhead of calculating an object size.
 
 That's it! with these memory guards, I know that the app will not exceed
 ~250M in memory and will emit bulk requests of 5MB maximum.
