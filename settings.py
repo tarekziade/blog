@@ -15,11 +15,11 @@ OUTPUT_PATH = "html"
 FEED_RSS = "feed"
 TAG_FEED_RSS = "tag/%s/feed"
 CATEGORY_FEED_RSS = "category/%s/feed"
-MENUITEMS = [("Home", "/"), ("Books", "/books.html"), ("About Me", "/resume.html")]
+MENUITEMS = [("Home", "/"), ("Books", "https://www.amazon.com/stores/Tarek-Ziad%C3%A9/author/B09F9WJ5J5"), ("About Me", "/resume.html")]
 THEME = "theme"
 
 THEME_TEMPLATES_OVERRIDES = ["static"]
-TEMPLATE_PAGES = {"books.html": "books.html", "resume.html": "resume.html"}
+TEMPLATE_PAGES = {"resume.html": "resume.html"}
 
 ARTICLE_URL = "{slug}/"
 ARTICLE_LANG_URL = "{slug}-{lang}/"
