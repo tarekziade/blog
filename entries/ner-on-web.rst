@@ -12,7 +12,7 @@ NER is an interesting task because unlike summarization, you can work at the sen
 without hitting a context size limit, by infering sentence by sentence. This means NER is a
 great target for small specialized models.
 
-The Hugging Face Hub has tons of models for this, the most popular one is `distilbert-base-NER <https://huggingface.co/dslim/distilbert-base-NER>`_. Another model from dslim that I have found that
+The Hugging Face Hub has tons of models for this, the most popular one is `bert-base-NER <https://huggingface.co/dslim/bert-base-NER>`_. Another model from dslim that I have found that
 is doing an excellent job is `distilbert-NER <https://huggingface.co/dslim/distilbert-NER>`_ which is a fined-tuned version of DistilBERT. The model weights 66M params, and once quantized, the weight file is down to 65MiB, which is quite small.
 
 I've pushed an ONNX version at https://huggingface.co/tarekziade/distilbert-NER for my experiments with `Transformers.js <https://huggingface.co/docs/transformers.js/index>`_.
