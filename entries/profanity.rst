@@ -46,7 +46,7 @@ All the code used to fine-tune and evaluate here: https://github.com/tarekziade/
 
 Usage example with Python:
 
-..code-block:: python
+.. code-block:: python
 
   from transformers import pipeline
 
@@ -55,10 +55,9 @@ Usage example with Python:
   print(classifier("These are beautiful flowers"))
 
 
-
 Usage example with Transformers.js:
 
-..code-block:: javascript
+.. code-block:: javascript
 
   import { pipeline } from '@xenova/transformers';
 
