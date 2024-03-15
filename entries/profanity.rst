@@ -71,4 +71,10 @@ And it's fast (I am not providing numbers because I don't know against what hard
 I am now trying to use a TinyBert base model to see if I don't lose too much accuracy.
 If not, it'll be much smaller and faster.
 
+I should add that the model suffers from the same limitations than Victor's one, as the training
+dataset does not contains a lot of trick words. e.g. people using `f3ck` to evade a filter.
+And a human will always be able to bypass the filtering by being imaginative.
+
+But for detecting that a model has produced profanity, I think it should work fairly ok.
+
 Thanks Victor for this great work, and inspiration.
