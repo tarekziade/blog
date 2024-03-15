@@ -13,7 +13,7 @@ useful when you want to moderate a forum or a chat room.
 
 I was looking for some tooling to do this and stumbled on that `blog post <https://victorzhou.com/blog/better-profanity-detection-with-scikit-learn/>`_.
 Victor's rationale is that all the tooling he found for this was based on a list of stop words,
-which were often very small or incomplete. He found one lib that was based on machine learning
+which were often incomplete. He found one lib that was based on machine learning
 but was very slow, so he created his own lib.
 
 He used Linear Support Vector Machine (SVM) and trained a model against a dataset he created
@@ -66,7 +66,7 @@ Usage example with Transformers.js:
   let out = await pipe('These are beautiful flowers');
 
 
-And it's fast (I am not proving numbers because I don't know against what hardware it was tested back then)
+And it's fast (I am not providing numbers because I don't know against what hardware it was tested back then)
 
 I am now trying to use a TinyBert base model to see if I don't lose too much accuracy.
 If not, it'll be much smaller and faster.
