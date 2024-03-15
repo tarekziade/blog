@@ -68,10 +68,12 @@ Usage example with Transformers.js:
 
 And it's fast (I am not providing numbers because I don't know against what hardware it was tested back then)
 
-I am now trying to use a TinyBert base model to see if I don't lose too much accuracy.
-If not, it'll be much smaller and faster.
+I've also created a "tiny" version based on TinyBert that is only 19M params and keeps a pretty
+good accuracy. For that flavor, the ONNX quantized model weight less than 20MiB and infers really fast.
 
-I should add that the model suffers from the same limitations than Victor's one, as the training
+See https://huggingface.co/tarekziade/pardonmyai-tiny
+
+I should add that the models suffers from the same limitations than Victor's one, as the training
 dataset does not contains a lot of trick words. e.g. people using `f3ck` to evade a filter.
 And a human will always be able to bypass the filtering by being imaginative.
 
